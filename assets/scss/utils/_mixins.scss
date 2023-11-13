@@ -1,0 +1,32 @@
+@mixin pc-lg{
+    @media(max-width: 992px){
+        @content;
+    }
+}
+@mixin pad{
+    @media(max-width: 768px){
+        @content;
+    }
+}
+@mixin pad-sm{
+    @media(max-width: 576px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media(max-width: 375px){
+        @content;
+    }
+}
+@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
+    background-image: linear-gradient(to right, $start-color, $end-color);
+  }
+@mixin gradient-y($start-color: $primary-300, $end-color: $primary-800) {
+    background-image: linear-gradient(to bottom, $start-color, $end-color);
+  }
+@mixin radial-gradient(
+  $start-color: $primary-300,
+  $end-color: $primary-800,
+) {
+  background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
+}

@@ -305,7 +305,9 @@ $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
+$light2:         $gray-200 !default;//*custom
 $dark:          $gray-900 !default;
+$dark2:          $gray-700 !default;//*custom
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -317,7 +319,9 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
+  "light2":      $light2,//*custom
   "dark":       $dark,
+  "dark2":      $dark2//*custom
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -434,7 +438,7 @@ $stretched-link-z-index:                  1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom:   1rem !default;
+$paragraph-margin-bottom:   0px !default;
 
 
 // Grid breakpoints

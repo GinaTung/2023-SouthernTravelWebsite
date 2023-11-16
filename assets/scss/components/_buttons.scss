@@ -1,0 +1,13 @@
+.btn-turquoise{
+    padding: 8px 24px;
+    background: $primary-400;
+    border-radius: 40px;
+    color:$white;
+}
+.btn-outline-turquoise{
+    padding: 8px 24px;
+    background: $white;
+    border-radius: 40px;
+    color:$primary-400;
+    border: 1px solid $primary-400;
+}

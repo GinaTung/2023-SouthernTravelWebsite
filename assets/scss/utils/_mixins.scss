@@ -1,10 +1,12 @@
+//PC-->手機
+//手機320-767
 @mixin pc-lg{
     @media(max-width: 992px){
         @content;
     }
 }
-@mixin pad{
-    @media(max-width: 768px){
+@mixin pad-md{
+    @media(max-width: 767px){
         @content;
     }
 }
@@ -17,16 +19,4 @@
     @media(max-width: 375px){
         @content;
     }
-}
-@mixin gradient-x($start-color: $primary, $end-color: $secondary) {
-    background-image: linear-gradient(to right, $start-color, $end-color);
-  }
-@mixin gradient-y($start-color: $primary-300, $end-color: $primary-800) {
-    background-image: linear-gradient(to bottom, $start-color, $end-color);
-  }
-@mixin radial-gradient(
-  $start-color: $primary-300,
-  $end-color: $primary-800,
-) {
-  background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
 }

@@ -6,13 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>南部輕旅遊</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
-  <div class="banner">
-    <a href="#"><img src="../assets/images/hero-lg.png" alt="" class="img-fluid"></a>
-  </div>
+    <div class="banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-bg banner-img1">
+              <div class="banner-box p-10 mx-auto text-center">
+                <p class="fs-1 mb-8 d-flex align-items-center justify-content-center">
+                  <img src="../assets/images/icon-map.png" alt="icon-map" style="height:32px;" class="me-2">
+                  嘉義景點推薦
+                  <img src="../assets/images/icon-map.png" alt="icon-map" style="height:32px;" class="ms-2">
+                </p>
+                <h1 class="font-hero mb-10">國立故宮博物院南部院區</h1>
+                <p class="fs-5 mb-2">博物館建築以中國水墨畫濃墨、非白與渲染三種技法</p>
+                <p class="fs-5">形成時量體展示空間及文物庫房、虛量體公共接待空間與穿透連接空間</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide m-auto">
+            <div class="banner-bg banner-img2"></div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
     <div class="container">
       <p class="font-hero text-success">我是首頁</p>
       <p class="bg-primary-200 fs-1">123456</p>
@@ -52,7 +76,8 @@
     </div>
 
     <%- include('./layout/footer'); -%>
-
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script type="module" src="../assets/js/swiper.js"></script>
       <script type="module" src="../main.js"></script>
 </body>
 

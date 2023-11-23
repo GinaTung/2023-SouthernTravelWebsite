@@ -1,0 +1,19 @@
+.image-tab-pane {
+    position: relative;
+    width: 714px;
+    height: 604px;
+    .first-img {
+      position: absolute;
+      top: 32px;
+      left: 0px;
+      border-radius: 24px;
+
+    }
+    .second-image {
+      // 调整第二张图片的位置
+      position: absolute;
+      top: 0;
+      left: 32px;
+      border-radius: 24px;
+    }
+  }

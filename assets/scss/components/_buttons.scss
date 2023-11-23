@@ -20,3 +20,19 @@
     color: $white;
   }
 }
+.btn-cerulean-blue{
+  padding: 16px 69px;
+  background: $primary-600;
+  border-radius: 40px !important;
+  color: $white;
+  &:hover {
+    background: $dark;
+    color: $white !important;
+  }
+}
+.z-index-1{
+  z-index: 1 !important;
+}
+.z-index-2{
+  z-index: 2 !important;
+}

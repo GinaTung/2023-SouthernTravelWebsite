@@ -23,9 +23,49 @@
     left: 32px;
   }
 }
-
-
-.list-group-item.active{
-  border: 2px solid $primary-400 !important;
+// * {
+//   outline: 1px solid #000;
+// }
+.list-group-item {
+  border: 2px solid transparent !important;
   border-radius: 24px !important;
+}
+.list-group-item.active {
+  outline: 2px solid $primary-400 !important;
+  border-radius: 24px !important;
+}
+
+// .card{
+//   position: relative;
+//   .heart{
+//     position: absolute;
+//     right: 16px;
+//     top: 16px;
+//     background: $white;
+//     border-radius: 48px;
+//   }
+// }
+.card {
+  position: relative;
+  img {
+    border-radius: 24px;
+  }
+  .heart-checkbox {
+    display: none; /* 隐藏复选框 */
+  }
+  .heart {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: $white;
+    border-radius: 48px;
+    cursor: pointer;
+    img {
+      content: url("../images/favorite_border.png");
+    }
+  }
+}
+
+.heart-checkbox:checked + .heart img {
+  content: url("../images/favorite_fill.png");
 }

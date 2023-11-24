@@ -1,6 +1,6 @@
 .image-tab-pane {
   position: relative;
-  width: 714px;
+  width: 714px !important;
   height: 604px;
   .first-img,
   .second-image {
@@ -39,10 +39,11 @@
 //     border-radius: 48px;
 //   }
 // }
-.card {
+.card-attractions {
   position: relative;
   img {
     border-radius: 24px;
+    display: block;
   }
   .heart-checkbox {
     display: none; /* 隐藏复选框 */
@@ -54,12 +55,109 @@
     background: $white;
     border-radius: 48px;
     cursor: pointer;
+    z-index: 2;
     img {
       content: url("../images/favorite_border.png");
     }
+  }
+  .mask {
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px;
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 24px;
+    }
+
+    p {
+      z-index: 1;
+    }
+  }
+
+  &:hover .mask {
+    opacity: 1;
   }
 }
 
 .heart-checkbox:checked + .heart img {
   content: url("../images/favorite_fill.png");
+}
+
+.image-mask {
+  position: relative;
+
+  img {
+    border-radius: 24px;
+    display: block;
+  }
+  .heart-checkbox {
+    display: none; /* 隐藏复选框 */
+  }
+  .heart {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: $white;
+    border-radius: 48px;
+    cursor: pointer;
+    z-index: 2;
+    img {
+      content: url("../images/favorite_border.png");
+    }
+  }
+  .mask {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 24px;
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 24px;
+    }
+    p {
+      z-index: 1;
+    }
+  }
+  &:hover .mask {
+    opacity: 1;
+  }
+}
+.ad{
+  background-image: url("../images/banner-lg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
 }

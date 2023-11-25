@@ -101,7 +101,6 @@
 
 .image-mask {
   position: relative;
-
   img {
     border-radius: 24px;
     display: block;
@@ -154,10 +153,36 @@
     opacity: 1;
   }
 }
-.ad{
+.ad {
   background-image: url("../images/banner-lg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: #fff;
+}
+.card-travel-plan {
+  position: relative;
+  .tag{
+    position: absolute;
+    left: 32px;
+    top: -2px;
+    background-repeat: no-repeat;
+    writing-mode: vertical-rl;
+    letter-spacing:6px;
+  }
+  .heart-checkbox {
+    display: none; /* 隐藏复选框 */
+  }
+  .heart {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    background: $white;
+    border-radius: 48px;
+    cursor: pointer;
+    z-index: 2;
+    img {
+      content: url("../images/favorite_border.png");
+    }
+  }
 }

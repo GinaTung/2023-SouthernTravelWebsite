@@ -6,53 +6,341 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>南部輕旅遊</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
-  <div class="banner">
-    <a href="#"><img src="../assets/images/hero-lg.png" alt="" class="img-fluid"></a>
-  </div>
-    <div class="container">
-      <p class="font-hero text-success">我是首頁</p>
-      <p class="bg-primary-200 fs-1">123456</p>
-      <p class="index-title">1234564</p>
-      <div class="card" style="width: 18rem">
-        <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-        <div class="card-body">
-          <h5 class="card-title">卡片元件</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-            nobis earum!
-          </p>
+    <div class="banner">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="banner-bg banner-img1">
+              <div class="banner-box p-10 mx-auto text-center">
+                <p class="fs-1 mb-8 d-flex align-items-center justify-content-center">
+                  <img src="../assets/images/icon-map.png" alt="icon-map" style="height:32px;" class="me-2">
+                  嘉義景點推薦
+                  <img src="../assets/images/icon-map.png" alt="icon-map" style="height:32px;" class="ms-2">
+                </p>
+                <h1 class="font-hero mb-10">國立故宮博物院南部院區</h1>
+                <p class="fs-5 mb-2">博物館建築以中國水墨畫濃墨、非白與渲染三種技法</p>
+                <p class="fs-5">形成時量體展示空間及文物庫房、虛量體公共接待空間與穿透連接空間</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide m-auto">
+            <div class="banner-bg banner-img2"></div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+    <div class="search-bar bg-primary-400 border-left-bottom">
+      <div class="container text-center py-20">
+        <p class="fs-3 text-white mb-10 fw-bold">開始你的南部輕旅遊！</p>
+        <div class="mx-auto" style="max-width: 856px;">
+          <div class="input-group position-relative">
+            <input type="text" class="form-control rounded-pill px-10 py-4 z-index-2 border-0" placeholder="輸入遊玩縣市">
+            <a class="btn-cerulean-blue position-absolute top-50 end-0 translate-middle-y z-index-2" type="button"
+              hrdf="#" style="width:180px;">GO !</a>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="latestNews">
+      <div class="container py-30">
+        <p class="fs-1 text-primary-700 fw-bold mb-2 text-center">最新消息</p>
+        <p class="fs-5 text-center mb-20">Latest News</p>
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                <div class="image-tab-pane">
+                  <img src="../assets/images/Frame 22.png" class="img-fluid opacity-25 first-img z-index-1"
+                    style="object-fit: cover;">
+                  <img src="../assets/images/Frame 22.png" class=" img-fluid second-img z-index-2"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                <div class="image-tab-pane">
+                  <img src="../assets/images/attraction1.png" class="img-fluid opacity-25 first-img z-index-1"
+                    style="object-fit:cover;">
+                  <img src="../assets/images/attraction1.png" class=" img-fluid second-img z-index-2"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                <div class="image-tab-pane">
+                  <img src="../assets/images/attraction2.png" class="img-fluid opacity-25 first-img z-index-1"
+                    style="object-fit:cover;">
+                  <img src="../assets/images/attraction2.png" class=" img-fluid second-img z-index-2"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+              <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                <div class="image-tab-pane">
+                  <img src="../assets/images/attraction4.png" class="img-fluid opacity-25 first-img z-index-1"
+                    style="object-fit:cover;">
+                  <img src="../assets/images/attraction4.png" class=" img-fluid second-img z-index-2"
+                    style="object-fit: cover;">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active p-6 mb-2" id="list-home-list"
+                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="list-tab-title">
+                    <div class="d-flex mb-3">
+                      <span
+                        class="badge rounded-pill bg-primary-200 text-primary-500 fw-bold me-1 py-1 px-4 fs-6">旅遊方案</span>
+                      <span class="badge rounded-pill bg-light2 text-dark2 py-1 px-4 fs-6">嘉義</span>
+                    </div>
+                    <div class="nav-section-title">
+                      <h4 class="mb-2 fw-bold text-primary-700">阿里山芬多精之雙日遊</h4>
+                      <p class="fs-5 text-dark2">2024/10/28 ~ 2024/10/29</p>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action p-6 mb-2" id="list-profile-list" data-bs-toggle="list"
+                href="#list-profile" role="tab" aria-controls="list-profile">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="list-tab-title">
+                    <div class="d-flex mb-3">
+                      <span
+                        class="badge rounded-pill bg-primary-200 text-primary-500 fw-bold me-1 py-1 px-4 fs-6">旅遊方案</span>
+                      <span class="badge rounded-pill bg-light2 text-dark2 py-1 px-4 fs-6">台南</span>
+                    </div>
+                    <div class="nav-section-title">
+                      <h4 class="mb-2 fw-bold text-primary-700">綠色隧道一日遊</h4>
+                      <p class="fs-5 text-dark2">2024/10/31</p>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action p-6 mb-2" id="list-messages-list" data-bs-toggle="list"
+                href="#list-messages" role="tab" aria-controls="list-messages">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="list-tab-title">
+                    <div class="d-flex mb-3">
+                      <span
+                        class="badge rounded-pill bg-primary-200 text-primary-500 fw-bold me-1 py-1 px-4 fs-6">旅遊方案</span>
+                      <span class="badge rounded-pill bg-light2 text-dark2 py-1 px-4 fs-6">高雄</span>
+                    </div>
+                    <div class="nav-section-title">
+                      <h4 class="mb-2 fw-bold text-primary-700">海陸體驗，玩食高雄雙日遊</h4>
+                      <p class="fs-5 text-dark2">2024/12/10 ~ 2024/12/11</p>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </div>
+              </a>
+              <a class="list-group-item list-group-item-action p-6 mb-2" id="list-settings-list" data-bs-toggle="list"
+                href="#list-settings" role="tab" aria-controls="list-settings">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="list-tab-title">
+                    <div class="d-flex mb-3">
+                      <span
+                        class="badge rounded-pill bg-secondary-200 text-secondary-600 fw-bold me-1 py-1 px-4 fs-6">旅遊景點</span>
+                      <span class="badge rounded-pill bg-light2 text-dark2 py-1 px-4 fs-6">嘉義</span>
+                    </div>
+                    <div class="nav-section-title">
+                      <h4 class="mb-2 fw-bold text-primary-700">高跟鞋教堂</h4>
+                      <p class="fs-5 text-dark2">2024/12/23</p>
+                    </div>
+                  </div>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="southern-tourist-attractions">
+      <div class="container py-30">
+        <p class="fs-1 text-primary-700 fw-bold mb-2 text-center">南部旅遊景點</p>
+        <p class="fs-5 text-center mb-20">Southern tourist attractions</p>
+        <div class="row ">
+          <div class="col-12 col-md-6">
+            <div class="card-attractions">
+              <input type="checkbox" id="heartCheckbox" class="heart-checkbox">
+              <label for="heartCheckbox" class="heart p-2">
+                <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+              </label>
+              <img src="../assets/images/attraction1.png" class="card-img-top" alt="嘉義公園-射日塔">
+              <div class="mask">
+                <p class="fs-3 fw-bold mb-4">嘉義公園-射日塔</p>
+                <p class="fs-5">在嘉義公園內，民眾只要仰頭看，便能看見一朵巨型豔紫荊花，與藍天相輝映。豔紫荊花為嘉義市市花，透過射日塔照射，充分顯示嘉義市花之美！</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image-mask mb-6">
+                  <input type="checkbox" id="heartCheckbox2" class="heart-checkbox">
+                  <label for="heartCheckbox2" class="heart p-2">
+                    <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                  </label>
+                  <img src="../assets/images/attraction2.png" alt="Image 2" class="img-fluid">
+                  <div class="mask flex-column">
+                    <p class="fs-4 fw-bold mb-2">巨大貝殼-旗津海珍珠</p>
+                    <p class="fs-5">情侶必遊之地</p>
+                  </div>
+                </div>
+                <div class="image-mask mb-6">
+                  <input type="checkbox" id="heartCheckbox3" class="heart-checkbox">
+                  <label for="heartCheckbox3" class="heart p-2">
+                    <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                  </label>
+                  <img src="../assets/images/attraction5.png" alt="Image 2" class="img-fluid">
+                  <div class="mask flex-column">
+                    <p class="fs-4 fw-bold mb-2">安平古堡</p>
+                    <p class="fs-5">荷蘭時期遺蹟</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="image-mask mb-6">
+                  <input type="checkbox" id="heartCheckbox4" class="heart-checkbox">
+                  <label for="heartCheckbox4" class="heart p-2">
+                    <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                  </label>
+                  <img src="../assets/images/attraction4.png" alt="Image 3" class="img-fluid">
+                  <div class="mask flex-column">
+                    <p class="fs-4 fw-bold mb-2">旋轉式行人跨海大橋</p>
+                    <p class="fs-5">台灣第一座</p>
+                  </div>
+                </div>
+                <div class="image-mask mb-6">
+                  <input type="checkbox" id="heartCheckbox5" class="heart-checkbox">
+                  <label for="heartCheckbox5" class="heart p-2">
+                    <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                  </label>
+                  <img src="../assets/images/attraction3.png" alt="Image 4" class="img-fluid">
+                  <div class="mask flex-column">
+                    <p class="fs-4 fw-bold mb-2">愛河河畔美景</p>
+                    <p class="fs-5">愛之船情侶遊覽</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ad">
+      <div class="container py-30 d-flex justify-content-between">
+        <div class="ad-l-side">
+          <p class="fs-1 fw-bold mb-6">計算荷包 盡情遊覽</p>
+          <p class="fs-1 mb-8 fw-bold">我們的旅程 為您量身定制！</p>
+          <p class="fs-4 mb-2">Budget Smart, Travel Big</p>
+          <p class="fs-4">Your Custom Journey Awaits.</p>
+        </div>
+        <div class="ad-r-side d-flex flex-column align-items-center justify-content-center">
+          <a href="#" class="btn-cerulean-blue mb-4" type="button">立即開始</a>
+          <p class="fs-6 fw-bold">根據天數與人數，推薦合適行程</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="southern-travel-plan">
+      <div class="container py-30">
+        <p class="fs-1 text-primary-700 fw-bold mb-2 text-center">南部旅遊方案</p>
+        <p class="fs-5 text-center mb-20">Southern tourist attractions</p>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card-travel-plan h-100">
+              <div class="tag"><img src="../assets/images/Rectangle 1.png" alt="tag" class="position-relative"><span
+                  class="fs-5 position-absolute top-0 px-2 pt-3 pb-6 text-white">高雄</span></div>
+              <input type="checkbox" id="heartCheckbox6" class="heart-checkbox">
+              <label for="heartCheckbox6" class="heart p-2">
+                <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+              </label>
+              <img src="../assets/images/plan1.png" class="card-img-top pb-6 pb-6" alt="...">
+              <div class="card-body">
+                <h3 class="card-title pb-4 fw-bold text-primary-700">亞灣區精選夜間路線</h3>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/calendar_today.png" alt="calendar_today" class="img-fluid me-2">
+                    <span class="fs-5">一日遊</span>
+                  </div>
+                  <p class="fs-3 text-primary-500">$8,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-travel-plan h-100">
+              <div class="tag"><img src="../assets/images/Rectangle 1.png" alt="tag" class="position-relative"><span
+                  class="fs-5 position-absolute top-0 px-2 pt-3 pb-6 text-white">嘉義</span></div>
+              <input type="checkbox" id="heartCheckbox7" class="heart-checkbox">
+              <label for="heartCheckbox7" class="heart p-2">
+                <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+              </label>
+              <img src="../assets/images/plan2.png" class="card-img-top pb-6" alt="...">
+              <div class="card-body">
+                <h3 class="card-title pb-4 fw-bold text-primary-700">阿里山芬多精之旅</h3>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/calendar_today.png" alt="calendar_today" class="img-fluid me-2">
+                    <span class="fs-5">二日遊</span>
+                  </div>
+                  <p class="fs-3 text-primary-500">$24,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-travel-plan h-100">
+              <div class="tag"><img src="../assets/images/Rectangle 1.png" alt="tag" class="position-relative"><span
+                  class="fs-5 position-absolute top-0 px-2 pt-3 pb-6 text-white">台南</span></div>
+              <input type="checkbox" id="heartCheckbox8" class="heart-checkbox">
+              <label for="heartCheckbox8" class="heart p-2">
+                <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+              </label>
+              <img src="../assets/images/plan3.png" class="card-img-top pb-6" alt="...">
+              <div class="card-body">
+                <h3 class="card-title pb-4 fw-bold text-primary-700">歷史探訪之旅</h3>
+                <div class="d-flex justify-content-between">
+                  <div class="d-flex align-items-center">
+                    <img src="../assets/images/calendar_today.png" alt="calendar_today" class="img-fluid me-2">
+                    <span class="fs-5">一日遊</span>
+                  </div>
+                  <p class="fs-3 text-primary-500">$7,500</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <%- include('./layout/footer'); -%>
-
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+      <script type="module" src="../assets/js/swiper.js"></script>
       <script type="module" src="../main.js"></script>
 </body>
 

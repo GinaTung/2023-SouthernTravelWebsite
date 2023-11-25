@@ -1,25 +1,32 @@
 .image-tab-pane {
   position: relative;
-  width: 714px !important;
-  height: 604px;
+  width: 100%;
+  height: 0;
+  padding-top: 80%; // 調整 padding-top，使高度為寬度的百分之82.5
+
   .first-img,
-  .second-image {
-    border-radius: 24px;
-  }
-  .first-img {
+  .second-img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    top: 32px;
-    left: 0;
+    border-radius: 24px; // 設置圓弧半徑為 24px
   }
-  .second-image {
-    position: absolute;
+
+  .second-img {
     top: 0;
-    left: 32px;
+    right: 0; 
+    z-index: 2; // 使 second-img 在上方
+  }
+
+  .first-img {
+    top: 32px; // 從左下角開始
+    left: 0;
+    right: 32px; // 從右邊保持32px的距離
+    z-index: 1; // 使 first-img 在下方
   }
 }
-// * {
-//   outline: 1px solid #000;
-// }
+
 .list-group-item {
   border: 2px solid transparent !important;
   border-radius: 24px !important;
@@ -29,16 +36,6 @@
   border-radius: 24px !important;
 }
 
-// .card{
-//   position: relative;
-//   .heart{
-//     position: absolute;
-//     right: 16px;
-//     top: 16px;
-//     background: $white;
-//     border-radius: 48px;
-//   }
-// }
 .card-attractions {
   position: relative;
   img {
@@ -132,7 +129,7 @@
     justify-content: flex-end;
     padding: 24px;
     color: #fff;
-    opacity: 0.6;
+    opacity: 0.4;
     transition: opacity 0.3s ease;
 
     &:before {
@@ -142,7 +139,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+      background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 60%);
       border-radius: 24px;
     }
     p {
@@ -162,13 +159,13 @@
 }
 .card-travel-plan {
   position: relative;
-  .tag{
+  .tag {
     position: absolute;
     left: 32px;
     top: -2px;
     background-repeat: no-repeat;
     writing-mode: vertical-rl;
-    letter-spacing:6px;
+    letter-spacing: 6px;
   }
   .heart-checkbox {
     display: none; /* 隐藏复选框 */
@@ -185,4 +182,14 @@
       content: url("../images/favorite_border.png");
     }
   }
+}
+
+
+.material-symbols-outlined {
+  color: black;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }

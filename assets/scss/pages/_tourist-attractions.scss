@@ -1,0 +1,23 @@
+.banner-ad {
+  background-image: url("../images/banner-lg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  max-height: 250px;
+  height: 250px;
+}
+.link-color:active{
+    background-color: $primary-400;
+    color: $white;
+  }
+
+.link-color:hover{
+    background-color: $primary-400;
+    color: $white !important;
+  }
+
+.nav-link.active {
+  background-color: $primary-400;
+  color: $white;
+}

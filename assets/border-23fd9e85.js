@@ -1,0 +1,1 @@
+var o=document.querySelector(".navbar-toggler"),n=document.querySelector(".border-double-bottom");o.addEventListener("click",function(){n.classList.toggle("rounded-bottom")});let e=0;const t=document.querySelector(".plusOne");t.addEventListener("click",function(r){e+=1,t.textContent=`＋${e}`,console.log(e)});

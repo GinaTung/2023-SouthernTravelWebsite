@@ -105,6 +105,7 @@ $utilities: map-merge(
       )
     ),
     "border-top": (
+      responsive: true,
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -188,7 +189,7 @@ $utilities: map-merge(
       property: min-width,
       class: min-vw,
       values: (100: 100vw)
-    ),
+    ),//custom
     "height": (
       property: height,
       responsive: true,
@@ -623,6 +624,7 @@ $utilities: map-merge(
     // scss-docs-end utils-interaction
     // scss-docs-start utils-border-radius
     "rounded": (
+      responsive: true,
       property: border-radius,
       class: rounded,
       values: (

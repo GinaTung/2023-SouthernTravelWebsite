@@ -397,7 +397,8 @@ $spacers: (//*custom
   17: $spacer * 4.25,
   18: $spacer *4.5,//72
   19: $spacer * 4.75,
-  20: $spacer * 5
+  20: $spacer * 5,
+  30: $spacer * 7.5
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -409,6 +410,7 @@ $spacers: (//*custom
 $position-values: (
   0: 0,
   50: 50%,
+  75: 75%,//custom
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -426,8 +428,8 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
-$link-shade-percentage:                   20% !default;
+$link-decoration:                         none !default;//*custom
+$link-shade-percentage:                   80% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
 
@@ -1083,7 +1085,7 @@ $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
+$nav-link-hover-color:              #34405C !default;//*custom
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1501,7 +1503,7 @@ $list-group-item-color-scale:       40% !default;
 
 $list-group-hover-bg:               $gray-100 !default;
 $list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
+$list-group-active-bg:              transparent !default;//custom
 $list-group-active-border-color:    $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;

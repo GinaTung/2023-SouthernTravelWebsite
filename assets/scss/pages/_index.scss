@@ -150,13 +150,7 @@
     opacity: 1;
   }
 }
-.ad {
-  background-image: url("../images/banner-lg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-}
+
 .card-travel-plan {
   position: relative;
   .tag {
@@ -192,4 +186,8 @@
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+.list-group-item + .list-group-item.active{
+  margin-top: 0 !important;
 }

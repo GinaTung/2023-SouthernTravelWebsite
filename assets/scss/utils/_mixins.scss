@@ -5,27 +5,32 @@
 // iPhone 6 - 375px (視專案族群)
 // iPhone 5、SE - 320px
 @mixin pc-xl{
-    @media(max-width: 1199px){
+    @media(max-width: 1200px){
         @content;
     }
 }
 @mixin pc-lg{
-    @media(max-width: 991px){
+    @media(max-width: 992px){
         @content;
     }
 }
 @mixin pad-md{
-    @media(max-width: 766px){
+    @media(max-width: 768px){
         @content;
     }
 }
 @mixin pad-sm{
-    @media(max-width: 575px){
+    @media(max-width: 576px){
+        @content;
+    }
+}
+@mixin mobile-L{
+    @media(max-width: 426px){
         @content;
     }
 }
 @mixin mobile{
-    @media(max-width: 374px){
+    @media(max-width: 376px){
         @content;
     }
 }

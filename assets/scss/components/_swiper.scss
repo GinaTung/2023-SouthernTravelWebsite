@@ -58,7 +58,7 @@
     width: 80px;
     height: 80px;
     right: 3%;
-    @include mobile-L{
+    @include pad-sm{
       display: none;
     }
   }
@@ -67,7 +67,7 @@
     width: 80px;
     height: 80px;
     left: 3%;
-    @include mobile-L{
+    @include pad-sm{
       display: none;
     }
   }
@@ -76,7 +76,7 @@
   }
   .icon-map {
     height: 32px;
-    @include pc-lg {
+    @include pad-md {
       height: 16px;
     }
   }

@@ -4,11 +4,24 @@
 // iPhone 6 Plus - 414px (視專案族群)
 // iPhone 6 - 375px (視專案族群)
 // iPhone 5、SE - 320px
+
+@mixin pc-xl-min{
+    @media(min-width: 1200px){
+        @content;
+    }
+}
+@mixin pc-xxl-min{
+    @media(min-width: 1400px){
+        @content;
+    }
+}
+
 @mixin pc-xl{
     @media(max-width: 1200px){
         @content;
     }
 }
+
 @mixin pc-lg{
     @media(max-width: 992px){
         @content;

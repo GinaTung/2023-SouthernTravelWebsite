@@ -207,12 +207,12 @@ $utilities: map-merge(
     "max-height": (
       property: max-height,
       class: mh,
-      values: (100: 100%)
+      values: (100: 100%,30:30%)
     ),
     "viewport-height": (
       property: height,
       class: vh,
-      values: (100: 100vh)
+      values: (100: 100vh,33:33%,62:62.22%)
     ),
     "min-viewport-height": (
       property: min-height,

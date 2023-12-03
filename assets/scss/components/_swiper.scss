@@ -10,8 +10,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 100%;
-    width: 1920px;
+    // max-width: 100%;
+    width: 100%;
     max-height: auto;
     margin-top: -96px; /* 往上 */
     .banner-box {
@@ -22,6 +22,17 @@
       margin-bottom: 367.5px;
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 60px 0 60px 0;
+      @include pc-lg {
+        margin-top: 216px;
+        margin-bottom: 216px;
+        width: 75%;
+      }
+      @include pad-md{
+        margin-bottom: 0px;
+      }
+      @include mobile-L{
+        width: 312px;
+      }
     }
   }
   .banner-img1,
@@ -46,15 +57,27 @@
     color: #fff;
     width: 80px;
     height: 80px;
-    right: 5%;
+    right: 3%;
+    @include pad-sm{
+      display: none;
+    }
   }
   .swiper-button-prev {
     color: #fff;
     width: 80px;
     height: 80px;
-    left: 5%;
+    left: 3%;
+    @include pad-sm{
+      display: none;
+    }
   }
-  .swiper-pagination{
-    bottom: 5%;
+  .swiper-pagination {
+    bottom: 3%;
+  }
+  .icon-map {
+    height: 32px;
+    @include pad-md {
+      height: 16px;
+    }
   }
 }

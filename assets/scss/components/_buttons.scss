@@ -1,13 +1,38 @@
-.btn-turquoise{
-    padding: 8px 24px;
-    background: $primary-400;
-    border-radius: 40px;
-    color:$white;
-}
-.btn-outline-turquoise{
-    padding: 8px 24px;
+.btn-turquoise {
+  padding: 8px 24px;
+  background: $primary-400;
+  border-radius: 40px;
+  color: $white;
+  &:hover {
     background: $white;
-    border-radius: 40px;
-    color:$primary-400;
-    border: 1px solid $primary-400;
+    color: $primary-400;
+    outline: 1px solid $primary-400;
+  }
+}
+.btn-outline-turquoise {
+  padding: 8px 24px;
+  background: $white;
+  border-radius: 40px;
+  color: $primary-400;
+  border: 1px solid $primary-400;
+  &:hover {
+    background: $primary-400;
+    color: $white;
+  }
+}
+.btn-cerulean-blue{
+  padding: 16px 69px;
+  background: $primary-600;
+  border-radius: 40px !important;
+  color: $white;
+  &:hover {
+    background: $dark;
+    color: $white !important;
+  }
+}
+.z-index-1{
+  z-index: 1 !important;
+}
+.z-index-2{
+  z-index: 2 !important;
 }

@@ -466,6 +466,7 @@ $utilities: map-merge(
     ),
     "font-size": (
       rfs: true,
+      responsive: true,
       property: font-size,
       class: fs,
       values: $font-sizes
@@ -521,6 +522,7 @@ $utilities: map-merge(
     "white-space": (
       property: white-space,
       class: text,
+      responsive: true,
       values: (
         wrap: normal,
         nowrap: nowrap,

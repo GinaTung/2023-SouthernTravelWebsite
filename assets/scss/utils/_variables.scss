@@ -397,7 +397,8 @@ $spacers: (//*custom
   17: $spacer * 4.25,
   18: $spacer *4.5,//72
   19: $spacer * 4.75,
-  20: $spacer * 5,
+  20: $spacer * 5,//80
+  25: $spacer *6.25,//100
   30: $spacer * 7.5
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -427,10 +428,10 @@ $body-text-align:           null !default;
 //
 // Style anchor elements.
 
-$link-color:                              $primary !default;
+$link-color:                              $gray-900 !default;//custom
 $link-decoration:                         none !default;//*custom
 $link-shade-percentage:                   80% !default;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color:                        #43B8BD;//*custom
 $link-hover-decoration:                   null !default;
 
 $stretched-link-pseudo-element:           after !default;
@@ -452,7 +453,7 @@ $paragraph-margin-bottom:   0px !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 769px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -604,7 +605,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: 14px
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1084,7 +1086,7 @@ $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
-$nav-link-hover-color:              #34405C !default;//*custom
+$nav-link-hover-color:             var(--#{$prefix}link-hover-color) !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -1545,8 +1547,8 @@ $breadcrumb-padding-x:              0 !default;
 $breadcrumb-item-padding-x:         .5rem !default;
 $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
-$breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-divider-color:          $gray-700 !default;//custom
+$breadcrumb-active-color:           $gray-700 !default;//custom
 $breadcrumb-divider:                quote("/") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;

@@ -1,18 +1,17 @@
 // Border-radius
 .border-left-bottom {
   border-radius: 0 0 0 200px;
+  @include pc-lg{
+    border-radius: 0 0 0 80px;
+  }
 }
 .border-double-bottom {
-    @include pc-lg {
-      border-radius: 0;
-      transition: border-radius 0.3s ease; // 添加過渡效果
-    }
-  
-    &.rounded-bottom {
-      border-radius: 0 0 20px 20px;
-    }
+  @include pc-lg {
+    border-radius: 0;
+    transition: border-radius 0.3s ease; // 添加過渡效果
   }
-  
-*{
-    outline: 1px solid #000;
+
+  &.rounded-bottom {
+    border-radius: 0 0 20px 20px;
+  }
 }

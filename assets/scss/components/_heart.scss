@@ -12,7 +12,6 @@
   z-index: 2;
   .heart-img {
     font-size: 32px;
-    // content: url("../images/favorite_border.png");
     @include pc-xl {
       font-size: 24px;
     }
@@ -21,11 +20,3 @@
 .heart-checkbox:checked + .heart img {
   content: url("../images/favorite_fill.png");
 }
-.heart2{
-    position: absolute;
-    z-index: 2;
-}
-.heart-checkbox:checked + .heart2::before {
-    /* 样式设置 */
-    content: "\F415"; /* Unicode 码表示心形符号 */
-  }

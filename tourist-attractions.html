@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tourist-attractions</title>
-  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-13b62d96.js"></script>
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-8ca22801.js"></script>
   <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/border-23fd9e85.js"></script>
-  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-20c0467e.css">
+  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-75c5418b.css">
 </head>
 
 <body>
@@ -54,94 +54,100 @@
         </nav>
         <div class="tourist-list">
           <div class="row">
-            <div class="col-12 col-sm-3 mb-6 mb-sm-0">
-              <div class="border-dark2 border-1 border px-4 pt-4 pb-30">
-                <p class="fs-3 mb-4">地區篩選</p>
+            <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
+              <div class="border-info2 border-1 border">
+                <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2">
-                    <a class="nav-link link-color active" aria-current="page" href="tourist-attractions.html">全部區域</a>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color active d-flex justify-content-between" aria-current="page"
+                      href="tourist-attractions.html">全部區域<span>12</span>
+                    </a>
                   </li>
-                  <li class="nav-item mb-2">
-                    <a class="nav-link link-color" href="#">嘉義</a>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">嘉義<span>3</span></a>
                   </li>
-                  <li class="nav-item mb-2">
-                    <a class="nav-link link-color" href="#">台南</a>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
                   </li>
-                  <li class="nav-item mb-2">
-                    <a class="nav-link link-color">高雄</a>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-sm-9">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col-12 col-md-9">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="/2023-SouthernTravelWebsite/assets/pic-church-ab8a1863.jpg" class="card-img-top h-100" alt="台南水晶教堂">
-                    <div class="card-body">
-                      <h5 class="card-title">水晶教堂</h5>
-                      <p class="card-text">
-                        水晶教堂的建築靈感來自於以鹽堆為主的大堆，與小堆相連，主色調以鹽的白色為主，並以結晶鹽的晶瑩剔透作為設計靈感...</p>
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="/2023-SouthernTravelWebsite/assets/pic-church-ab8a1863.jpg" class="card-img-top img-fluid " alt="台南水晶教堂">
                     </div>
-                    <div class="card-footer text-end">
-                      <small class="">more</small>
+                    <input type="checkbox" id="heartCheckbox7" class="heart-checkbox">
+                    <label for="heartCheckbox7" class="heart p-1 p-xl-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title card-title-att d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700">水晶教堂</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        水晶教堂位於洲北鹽田與中洲鹽田交界。西濱空曠平坦，早年以鹽田為最大地景，突出於地表者為鹽堆，水晶教堂即以鹽堆之大堆連結小堆為造形意象。以鹽的白色為主色調，取結晶鹽的晶瑩剔透為其發想，結合曾經撫慰無數烏腳病患的教會意念，乃有水晶教堂此名。
+                      </p>
+                    </div>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="/2023-SouthernTravelWebsite/assets/pic-mesum-99f23545.jpg" class="card-img-top h-100" alt="台南水晶教堂">
-                    <div class="card-body">
-                      <h5 class="card-title">國立故宮博物院南部院區
-                      </h5>
-                      <p class="card-text">
-                        博物館建築以中國水墨畫濃墨、飛白與渲染三種技法，形成實量體展示空間及文物庫房、虛量體公共接待空間與穿透連接空間...</p>
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="/2023-SouthernTravelWebsite/assets/pic-grass-142886ab.jpg" class="card-img-top img-fluid" alt="四草綠色隧道">
                     </div>
-                    <div class="card-footer text-end">
-                      <small class="">more</small>
+                    <input type="checkbox" id="heartCheckbox7" class="heart-checkbox">
+                    <label for="heartCheckbox7" class="heart p-1 p-xl-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title card-title-att d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700">四草綠色隧道</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        四草綠色隧道所指的是四草大眾廟後方排水道的紅樹林區，這條河道因兩側遍佈樹齡逾50年的原生紅樹林，自然形成一彎如隧道般的景象，號稱「迷你版亞馬遜森林」，同時也是臺灣唯一的水上綠色河道。
+                        四草綠色隧道的航行路線分成兩條：紅樹林隧道及四草台江之旅，在上竹筏之前，每位乘客都需要穿上救生衣，再領取遮陽和保護頭部的斗笠，準備妥當後就可以登上竹筏，開啟這場綠色隧道探險啦！</p>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="/2023-SouthernTravelWebsite/assets/pic-church-ab8a1863.jpg" class="card-img-top h-100" alt="台南水晶教堂">
-                    <div class="card-body">
-                      <h5 class="card-title">水晶教堂</h5>
-                      <p class="card-text">
-                        水晶教堂的建築靈感來自於以鹽堆為主的大堆，與小堆相連，主色調以鹽的白色為主，並以結晶鹽的晶瑩剔透作為設計靈感...</p>
-                    </div>
-                    <div class="card-footer text-end">
-                      <small class="">more</small>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="/2023-SouthernTravelWebsite/assets/pic-mesum-99f23545.jpg" class="card-img-top h-100" alt="台南水晶教堂">
-                    <div class="card-body">
-                      <h5 class="card-title">國立故宮博物院南部院區
-                      </h5>
-                      <p class="card-text">
-                        博物館建築以中國水墨畫濃墨、飛白與渲染三種技法，形成實量體展示空間及文物庫房、虛量體公共接待空間與穿透連接空間...</p>
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="/2023-SouthernTravelWebsite/assets/attraction5-0b902b19.png" class="card-img-top img-fluid" alt="安平古堡">
                     </div>
-                    <div class="card-footer text-end">
-                      <small class="">more</small>
+                    <input type="checkbox" id="heartCheckbox7" class="heart-checkbox">
+                    <label for="heartCheckbox7" class="heart p-1 p-xl-2">
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title card-title-att d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700">安平古堡</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        安平古稱「大員」，是臺灣名稱的由來，不僅有豐富史蹟可供臺灣人尋根，遊客來此可賞夕陽，可夜遊，可觀景，可看海，也可大啖美食。
+                        安平知名古蹟眾多，安平古堡、億載金城、安平樹屋早已是知名景點，來此非得前往一遊不可，其他如東興洋行、海山館、德記洋行、安平小砲臺等，也都有豐富的歷史背景及各具特色的建築風貌，分別呈現荷蘭、鄭氏、清領、日治等不同時期所遺留下來的歷史足跡。臺灣三百多年來最精彩的歷史，皆化作優美的古蹟，留存在安平的結構之中。
+                      </p>
                     </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="/2023-SouthernTravelWebsite/assets/pic-church-ab8a1863.jpg" class="card-img-top h-100" alt="台南水晶教堂">
-                    <div class="card-body">
-                      <h5 class="card-title">水晶教堂</h5>
-                      <p class="card-text">
-                        水晶教堂的建築靈感來自於以鹽堆為主的大堆，與小堆相連，主色調以鹽的白色為主，並以結晶鹽的晶瑩剔透作為設計靈感...</p>
-                    </div>
-                    <div class="card-footer text-end">
-                      <small class="">more</small>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -163,12 +169,12 @@
     </div>
     
   </div>
-    <!-- <h1>我是contact</h1>
+      <!-- <h1>我是contact</h1>
     <div class="border-top-sm">
       12315646
     </div>
     <button type="button" class="plusOne">＋1</button> -->
-    <footer class="footer">
+      <footer class="footer">
   <div class="bg-light">
     <div class="container py-10 justify-content-between">
       <nav class="navbar mb-10 flex-column flex-lg-row py-0">
@@ -204,7 +210,7 @@
           </li>
         </ul>
       </nav>
-      <div class="d-flex flex-column align-items-center">
+      <div class="d-flex text-center flex-column align-items-center">
         <p class="fw-bold text-dark mb-1">
           南部輕旅行 「完美套裝」
         </p>
@@ -214,17 +220,18 @@
         <p class="text-dark mb-10">
           景點探索 + 美食巡禮 + 便捷交通 + 舒適住宿
         </p>
-        <p class="text-dark2 fs-7 fs-lg-6 text-center">
+        <p class="text-dark2 fs-7 fs-lg-6">
           本網站僅供個人作品使用，不提供商業用途<br>
-          資料來源：<a href="https://www.taiwan.net.tw/">臺灣觀光資訊網</a>
+          資料來源<br><a href="https://www.taiwan.net.tw/" class="fw-bold fs-7">臺灣觀光資訊網</a>
+          <br><a href="https://www.swcoast-nsa.gov.tw/zh-tw/gwoia" class="fw-bold fs-7">雲嘉南濱海國家風景區管理處網站</a>
         </p>
       </div>
     </div>
   </div>
   <p class="text-center text-dark py-6 bg-light2">© 2023 Willmeow All Rights Reserved.</p>
 </footer>
-      
-      
+        
+        
 </body>
 
 </html>

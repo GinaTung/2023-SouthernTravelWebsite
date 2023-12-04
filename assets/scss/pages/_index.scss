@@ -243,6 +243,10 @@
     z-index: 2;
     img {
       content: url("../images/favorite_border.png");
+      @include pc-xl {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

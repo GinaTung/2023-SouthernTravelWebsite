@@ -1,10 +1,95 @@
 .banner-ad {
-    background-image: url("../images/banner-lg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: #fff;
-    max-height: 250px;
-    height: 250px;
+  background-image: url("../images/banner-lg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  max-height: 250px;
+  height: 250px;
+}
+.card-att {
+  position: relative;
+  .tag {
+    padding: 8px 8px 16px 8px;
+    background-color: #0ea0a6;
+    position: absolute;
+    left: 16px;
+    top: 0;
+    /* 轉成直方向 */
+    writing-mode: vertical-rl;
+    line-height: 1;
+    letter-spacing: 6px;
+    z-index: 2;
+    /* 使用 clip-path 裁剪成三角形 */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
   }
-  
+  .heart-checkbox {
+    display: none; /* 隐藏复选框 */
+  }
+  .heart {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: $white;
+    border-radius: 48px;
+    cursor: pointer;
+    z-index: 2;
+    img {
+      content: url("../images/favorite_border.png");
+      @include pc-xl {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .card-att-img {
+    position: relative;
+    width: 100%;
+    height: 0%;
+    padding-top: 90%;
+    z-index: 1;
+    overflow: hidden;
+    @include pad-md{
+      padding-top: 85%;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .5s;
+    }
+    &:hover img{
+      transform: scale(1.5);
+      @include pad-md{
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.card-title-att {
+  min-height: 24px; // 固定高度
+  overflow: hidden;
+  text-overflow: ellipsis; // 如果需要省略號，可以保留這行，不需要可以刪除
+  white-space: nowrap;
+  svg {
+    max-width: 24px;
+    max-height: 24px;
+    color: $primary-700;
+  }
+}
+.card-body-att {
+  //文字內容的左右邊緣與文字標題保持一致對齊
+  text-align: justify;
+}
+.heart-checkbox:checked + .heart img {
+  content: url("../images/favorite_fill.png");
+}
+.card-font-truncate {
+  max-height: 96px; // 固定高度
+  // text-overflow: ellipsis; // 如果需要省略號，可以保留這行，不需要可以刪除
+  overflow: hidden;
+  white-space: wrap;
+}

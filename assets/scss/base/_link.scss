@@ -2,16 +2,16 @@
     color: $primary-400 !important;
   }
   .link-color:active{
-      background-color: $primary-400;
-      color: $white;
+      background-color: $primary-200;
+      color: $primary-500;
     }
   
   .link-color:hover{
-      background-color: $primary-400;
-      color: $white !important;
+      background-color: $primary-200;
+      color: $primary-500 !important;
     }
   
   .nav-link.active {
-    background-color: $primary-400;
-    color: $white;
+    background-color: $primary-200;
+    color: $primary-500;
   }

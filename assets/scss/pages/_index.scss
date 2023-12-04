@@ -62,31 +62,12 @@
 
 .card-attractions {
   position: relative;
-  img {
+  .card-attractions-img {
     border-radius: 24px;
     display: block;
     @include pad-md {
       height: 400px;
       object-fit: cover;
-    }
-  }
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-    img {
-      content: url("../images/favorite_border.png");
-      @include pc-xl {
-        width: 24px;
-        height: 24px;
-      }
     }
   }
   .mask {
@@ -125,41 +106,14 @@
   }
 }
 
-.heart-checkbox:checked + .heart img {
-  content: url("../images/favorite_fill.png");
-}
-
 .image-mask {
   position: relative;
-  img {
+  .image-mask-img {
     border-radius: 24px;
     display: block;
     object-fit: cover;
     width: 100%;
     height: auto; /* 或者 height: 100%; */
-  }
-
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-
-    img {
-      content: url("../images/favorite_border.png");
-
-      @include pc-xl {
-        width: 24px;
-        height: 24px;
-      }
-    }
   }
 
   .mask {
@@ -222,33 +176,6 @@
 }
 .card-travel-plan {
   position: relative;
-  .tag {
-    position: absolute;
-    left: 32px;
-    top: -2px;
-    background-repeat: no-repeat;
-    writing-mode: vertical-rl;
-    letter-spacing: 6px;
-  }
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-    img {
-      content: url("../images/favorite_border.png");
-      @include pc-xl {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
 }
 
 .material-symbols-outlined {

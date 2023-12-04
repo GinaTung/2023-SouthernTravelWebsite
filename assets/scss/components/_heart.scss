@@ -1,0 +1,22 @@
+.heart-checkbox {
+  display: none; /* 隐藏复选框 */
+}
+
+.heart {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: $white;
+  border-radius: 48px;
+  cursor: pointer;
+  z-index: 2;
+  .heart-img {
+    font-size: 32px;
+    @include pc-xl {
+      font-size: 24px;
+    }
+  }
+}
+.heart-checkbox:checked + .heart img {
+  content: url("../images/favorite_fill.png");
+}

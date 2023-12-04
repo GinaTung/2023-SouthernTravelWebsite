@@ -75,9 +75,9 @@
     bottom: 3%;
   }
   .icon-map {
-    height: 32px;
+    font-size: 32px;
     @include pad-md {
-      height: 16px;
+      font-size: 16px;
     }
   }
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tourist-attractions</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="banner-ad d-flex justify-content-center align-items-center">
+      <p class="fs-1 text-center">南部旅遊景點</p>
+    </div>
+    <div class="tourist-attractions-list">
+      <div class="container py-30">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a href="tourist-attractions.html">南部旅遊景點</a></li>
+            <li class="breadcrumb-item"><a href="tourist-chiayi.html">嘉義</a></li>
+            <li class="breadcrumb-item active" aria-current="page">高跟鞋教堂</li>
+          </ol>
+        </nav>
+        <div class="tourist-list">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
+              <div class="border-info2 border-1 border">
+                <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" 
+                      href="tourist-attractions.html">全部區域<span>12</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between active" href="#" aria-current="page">嘉義<span>3</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-9 d-flex flex-column justify-content-center align-items-center bg-primary-600">
+                <span class="loader"></span>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/ad'); -%>
+      <!-- <h1>我是contact</h1>
+    <div class="border-top-sm">
+      12315646
+    </div>
+    <button type="button" class="plusOne">＋1</button> -->
+      <%- include('./layout/footer'); -%>
+        <script type="module" src="../assets/js/border.js"></script>
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>

@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>收藏列表</title>
-  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-51f099fb.js"></script>
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-510a6798.js"></script>
   <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/border-23fd9e85.js"></script>
-  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-a046c30d.css">
+  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-a34668f8.css">
 </head>
 
 <body>
@@ -50,37 +50,13 @@
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
-            <li class="breadcrumb-item" aria-current="page"><a href="tourist-attractions.html">南部旅遊景點</a></li>
-            <li class="breadcrumb-item"><a href="tourist-chiayi.html">嘉義</a></li>
-            <li class="breadcrumb-item active" aria-current="page">高跟鞋教堂</li>
           </ol>
         </nav>
         <div class="tourist-list">
           <div class="row">
-            <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
-              <div class="border-info2 border-1 border">
-                <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" 
-                      href="tourist-attractions.html">全部區域<span>12</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between active" href="#" aria-current="page">嘉義<span>3</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-12 col-md-9 d-flex flex-column justify-content-center align-items-center bg-primary-600">
-                <a class="btn-golden-yellow" href="index.html">查看更多</a>
-           </div>
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center bg-primary-600 p-20">
+              <span class="loader"></span>
+         </div>
           </div>
         </div>
       </div>
@@ -126,17 +102,17 @@
         <ul class="navbar-nav flex-row fs-add-2">
           <li class="nav-item">
             <a class="nav-link py-0 ps-1" href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG1SURBVHgB7ZfLccIwEIbXjzvkzCFOB4YKSAeUAB2kA5IK0gKpJM4dGErQiWvMmYfzKxETSdjGWAId0DfjsYQs6We9u9YSeTwez30T1A2madrFLREXb1MYhon8DPqdoii6dG6jIMgPh8OGt3FnuOXiWoG8ch6VCxtGUTRFc0i3IcMfeJvP55k+cCJQiPskB0Dksy4y1B8SlnMCXOVkb8WC3Ocg8Jscst/vH2Sf1C2YknsSuaMI1CPUBdCgGEm3YEKXM+MRSH8pwwZKygrrBpuCyHuF7/TR/CBzqgU2SbhVwLHZYrEYQ+gT1mFkiZAsw4Uul0suctJGKNzlUe5bF3gEImf4pPWFf7bmagKPQGRBBgEU05UYDAZjWO+dWgbeEUUgFmRkiO2DhjULQlgihI3JAATWRu7rAtv4Shevcwrrv5Dh6yzTYEPgCOJGZA8md5QoRsStyDH4FjOlr40zcsxut1OMpAgU57CM3JHp9clJojbN/CaU7R3pP6zXa9br9b7ov5q7BbxomjQqmmR4CRDHccpPOeKkk/xOCgLe7tB5NpinZwYm1sh5QGy3W1ZXdno8Hs+98wNt7J5HvNTxIwAAAABJRU5ErkJggg==" alt="mdi_youtube" class="img-lg">
+              <i class="bi bi-youtube img-lg"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link py-0 ps-6" href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPYSURBVHgB7Vi9UttAEF7/FEmFUjHQRHTpIv5mUsodJXTpgDKVky4dpsqkCi7TwRNAngClywwwFk8QddAhd8kM4HwLe2QlJEsny0UyfDP23Z727j7t7u3diegJ/zkaZZQ8z3NQrLfb7dej0cihCdBoNOLr6+vvqAZhGMaF+lRArNlsdjHoe4gTEctAjHH3QbYPohHZEgQ5r9VqHaLq0nQR3dzcdPJIZhIENxfkBvTYaqH8qsKRn59qj+GpzsnJSVhIUMgdU9Jyfbxlr0zMlIHM0UN1UzWzJRfTc7TSnefn53cQG2tGRv3D2dlZ7/Ly8hfVBIwVX1xcHM3NzQ3VXA7qv9EeaN2EBXlR4M1+0l/X7oPcNtWE5eXlLoot/EJYa5fjDm17kLuiEqN9QVuxqQcAOV+RIx6EagK7FQWT8Zgk5tqTOXpKjbPGuu7X1gJynA8zGzEYt/wzCHgyOb99hL6JgAchL9XlJf+xtWDFUPqSKjMJOorgkIpJ5eZJTBqhCIwrUQbQjaDrylx9o3t7e3uOZ3fE8Hwml2AKVzSenC95Mi+Bu3TvSh9keaEdQV5AfZ2JZqWULDSpAngSSUVldhcXv8OVlRWfBSZallwlghLsX1LNAVzTgRtfgECD62g70Apw6aHs6VZoW+pzsO+QSuIgs3t6etrTOpADJg2rRSC2I80crxyrPbJAFRf7qr6fJqchzwIj42W6ZAkrgpJKXDXhQVEftrASHRmjNKwIwr2ulsWVY4HjVGJBmHRSFlYE04fVMkGf3vz5wEoWsCKIhJqwBk7YhdbgfKllrPSILGBFULavBwuoFZoLhMWm0n+0BdZKUCbpK9FfWlrKJSnPtowM9wZkCes8CDfvwSqcLhyZtIedxYXrDmCcQOLSk3zpm35sPfS1Ph1ZW5CDHqQ2Us285x6D6AjllWyDvlbgg6/N6agyQYaklw22SpEudPiFOnJYsEYlggyeEC6723OziAqxXegsFOVL5MaZvGeJGEzlqMIUIi7b4vrq6qoHMi7nSrg4tDmxkDoVof8wlyAlr5S8Kzllb3JCyPpKKqcj38jplZ5wMSzAcfJACIm4MM9NClntBnxpChLPtcBXS1wFn+MtfGl6w1dDXAV/0BQgt7yPqunrYDA4yiXImJ2dDUHwLX4mz63hruyi/Zzvs1QDOHQw5ifOoaZN8uS79ByZnz4k4LOO9AHdh8AkRM3tjxS5GPMtZuXJcR+PXCz/Y3MLmxbEcht5e3QrryObGm79BpINDPIKRJ9RvcT4g9FnLIrtSp/fNOSTiE/36WCGJsMQ5ELOGHV9jHrCP40/E4zXDcZL3t0AAAAASUVORK5CYII=" alt="mdi_instagram" class="img-lg">
+              <i class="bi bi-instagram img-lg"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link py-0 ps-6" href="#">
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJKSURBVHgB7ZiNjYIwFMef6ACO0Jvg8GMA3EAnOJ3AuwmMExgnUDdwA1lA4wg4wd0Aftz/JZAUbIEWBGP8JQTa0vLnlff6CtGbF6dBBXBdt42T5ziOaDQan3Lb7XY7Xa9XH5dH8EeWWAmEsGGz2ZyyuJxdfAjeHA6HNRliJLDX6w1xWuAQZEcAoXMTobkE8lTCYitcDqkc1pfLZY6pD7JuzBQIcQLidmRvNR0BRA6yRKYKfKC4iEyRWoEViItgkR2dp7d0vSBuRubijnCCJcLLNvnAbrc7RihaKfqI8PseUV6BPBhOYzJjud/vv8mOIUcI9N8mGxzV3XjTGZmxLSAuYqGqvBMYWk+QAfiGfqg4IoyzMe4EwnpfZMYxTzzLyTRZEfsGo7WVzDipKmGNncVYHmuQHSxpQZfM+U1WhFPlkQXwaE8uxwQiK/GoBBBq2mQJ+gq57KQ11kEybXPoyWmRBbD0JC1lCtti7SkrSSpPb8GYQLzhkWqGtwpyOSkwoJpBJPFjZbmAJcunmjmfz7FZvMsHLVaANRKFiVxh6xDAx1gDuULlJEuqCd75JevuBHJOhhsDqhh+pip06fLBMtInU+aqSqXAMLPdUnWsdYFfG6jh0ZMqppqfwXtkXbtWIOdk2PwMHimSx+ZnpCW8qUsdd3yUyDzimMy1OBKJyw2Vh48xO3m2CrmymXCgMQKwj/MMXi7IArYaRwjV9lKHUTbDnobjg9MtFH2DrnzviPuaiGPK+IEpeFsn1/f7fQ9T6HLywet7kR+Yb16ef046MCMpCREoAAAAAElFTkSuQmCC" alt="facebook" class="img-lg">
+              <i class="bi bi-facebook img-lg"></i>
              </a>
           </li>
         </ul>
@@ -160,7 +136,13 @@
       </div>
     </div>
   </div>
-  <p class="text-center text-dark py-6 bg-light2">© 2023 Willmeow All Rights Reserved.</p>
+  <div class="bg-light2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <p href="" class=""></p>
+      <p class="text-center text-dark py-6">© 2023 Willmeow All Rights Reserved.</p>
+      <a href="favorite-list.html" class="">我的收藏</a>
+    </div>
+  </div>
 </footer>
         
         

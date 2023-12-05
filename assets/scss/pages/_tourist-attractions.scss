@@ -9,20 +9,6 @@
 }
 .card-att {
   position: relative;
-  .tag {
-    padding: 8px 8px 16px 8px;
-    background-color: #0ea0a6;
-    position: absolute;
-    left: 16px;
-    top: 0;
-    /* 轉成直方向 */
-    writing-mode: vertical-rl;
-    line-height: 1;
-    letter-spacing: 6px;
-    z-index: 2;
-    /* 使用 clip-path 裁剪成三角形 */
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
-  }
   .card-att-img {
     position: relative;
     width: 100%;
@@ -47,6 +33,7 @@
       @include pad-md{
         transform: scale(1.2);
       }
+
     }
   }
 }

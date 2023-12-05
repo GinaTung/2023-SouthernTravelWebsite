@@ -44,3 +44,17 @@
 .z-index-2{
   z-index: 2 !important;
 }
+.z-index-3{
+  z-index: 3 !important;
+}
+.btn-golden-yellow {
+  text-align: center;
+  padding: 8px 24px;
+  background: $secondary-200;
+  color: #09484A;
+  border-radius: 40px;
+  &:hover {
+    background: #09484A; /* 調整為深色金黃色 */
+    color:  $secondary-200 !important;
+  }
+}

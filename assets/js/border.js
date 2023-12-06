@@ -11,11 +11,11 @@ navbarToggle.addEventListener("click", function () {
 
 
 
-let sum = 0;
-/* 程式碼撰寫 */
-const plusOne = document.querySelector(".plusOne");
-plusOne.addEventListener("click",function(e){
-  sum+=1;
-plusOne.textContent = `＋${sum}`;
-  console.log(sum);
-})
+// let sum = 0;
+// /* 程式碼撰寫 */
+// const plusOne = document.querySelector(".plusOne");
+// plusOne.addEventListener("click",function(e){
+//   sum+=1;
+// plusOne.textContent = `＋${sum}`;
+//   console.log(sum);
+// })

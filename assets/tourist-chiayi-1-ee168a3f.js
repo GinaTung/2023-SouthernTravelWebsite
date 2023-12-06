@@ -1,0 +1,1 @@
+import"./main-d01b1bff.js";import"./border-23fd9e85.js";document.addEventListener("DOMContentLoaded",function(){setTimeout(function(){document.querySelector(".loader").style.display="none",document.getElementById("loadedImage").style.display="block"},15e3)});

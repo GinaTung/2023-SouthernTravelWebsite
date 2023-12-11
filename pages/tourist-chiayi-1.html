@@ -14,8 +14,8 @@
       <p class="fs-1 text-center">南部旅遊景點</p>
     </div>
     <div class="tourist-attractions-list">
-      <div class="container py-30">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
+      <div class="container py-10 py-lg-30">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-5 pb-lg-20">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
             <li class="breadcrumb-item" aria-current="page"><a href="tourist-attractions.html">南部旅遊景點</a></li>
@@ -48,11 +48,7 @@
               </div>
             </div>
             <div class="col-12 col-md-9 d-flex flex-column justify-content-center align-items-center bg-primary-600">
-              <span class="loader"></span>
-              <a href="index.html">
-                <img src="../assets/images/404.png" alt="Loaded Image" class="hidden img-fluid" id="loadedImage"
-                  style="border-radius: 50px;">
-              </a>
+              <%- include('./layout/loader2'); -%>
             </div>
           </div>
         </div>
@@ -65,8 +61,11 @@
     </div>
     <button type="button" class="plusOne">＋1</button> -->
       <%- include('./layout/footer'); -%>
+      <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         <script type="module" src="../assets/js/border.js"></script>
         <script type="module" src="../assets/js/all.js"></script>
+        <script type="module" src="../assets/js-json/viewPan.js"></script>
+        <!-- <script type="module" src="../assets/js-json/all-json.js"></script> -->
         <script type="module" src="../main.js"></script>
 </body>
 

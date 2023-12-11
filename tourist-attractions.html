@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>南部旅遊景點</title>
-  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/tourist-attractions-af74040c.js"></script>
-  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/main-d01b1bff.js">
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/tourist-attractions-22224346.js"></script>
+  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/main-f113c58e.js">
   <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/border-72444186.js">
-  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-c8ac7479.css">
+  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/config-574966d6.js">
+  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-7b4a5dfc.css">
 </head>
 
 <body>
@@ -47,8 +48,8 @@
       <p class="fs-1 text-center">南部旅遊景點</p>
     </div>
     <div class="tourist-attractions-list">
-      <div class="container py-30">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
+      <div class="container py-10 py-lg-30">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-5 pb-lg-20">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
             <li class="breadcrumb-item active" aria-current="page">南部旅遊景點</li>
@@ -59,204 +60,30 @@
             <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
               <div class="border-info2 border-1 border">
                 <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column attractions-select">
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color active d-flex justify-content-between" aria-current="page"
-                      href="tourist-attractions.html">全部區域<span>12</span>
+                    <a class="nav-link p-5 fs-5 link-color active d-flex justify-content-between" data-name="全部" aria-current="page"
+                      href="#">全部區域<span class="attractionsNum"></span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between"
-                      href="tourist-chiayi.html">嘉義<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between "
+                      href="#" data-name="嘉義">嘉義<span class="attractionsNum2"></span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#" data-name="台南">台南<span class="attractionsNum2">1</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="高雄">高雄<span class="attractionsNum2">1</span></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-12 col-md-9">
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag  tag-yellow">嘉義</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-church2-421588ef.jpg" class="card-img-top img-fluid " alt="高跟鞋教堂">
-                    </div>
-                    <!-- 愛心點選 -->
-                    <input type="checkbox" id="heartCheckbox12" class="heart-checkbox">
-                    <label for="heartCheckbox12" class="heart-svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 18 18">
-                        <path
-                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                      </svg>
-                    </label>
-
-                    <div style="transform: rotate(0);">
-                      <div class="card-body card-body-att">
-                        <div class="card-title  d-flex justify-content-between align-items-center card-title-att">
-                          <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700">高跟鞋教堂</h4>
-                        </div>
-                        <p class="card-text card-font-truncate">
-                          高跟鞋教堂高度約17m，寬度約11m，主結構由1,269根鋼架組成，外表共約320餘片玻璃，造型相當亮麗美觀，其設計與裝設不僅是全臺第一，更是全世界唯一。高跟鞋教堂幸福意象工程施工相當不易，320餘片玻璃大小、安裝角度皆不同，必須克服高跟鞋的形狀及彎曲幅度，故鋼架及玻璃組裝精度要求極高。玻璃高跟鞋象徵「每個小女孩都曾夢想有雙漂亮的高跟鞋，伴著自己走出美麗優雅的人生。」
-                        </p>
-                      </div>
-                      <div class="card-footer text-end border-0">
-                        <a href="tourist-chiayi-1.html" class="fs-5 stretched-link">more</a>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag tag-yellow">嘉義</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-mesum-99f23545.jpg" class="card-img-top img-fluid" alt="國立故宮博物院南部院區">
-                    </div>
-                    <!-- 愛心點選 -->
-                    <input type="checkbox" id="heartCheckbox13" class="heart-checkbox">
-                    <label for="heartCheckbox13" class="heart-svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 18 18">
-                        <path
-                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                      </svg>
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700  card-title-att">國立故宮博物院南部院區</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        故宮南院位於嘉義縣太保市，鄰近高鐵嘉義站，除了博物館主體，院區中央另設有人工湖，並有一景觀橋橫跨南端人工湖，可將參觀遊客接引至博物館二樓大廳。
-                        博物館建築以中國水墨畫濃墨、飛白與渲染三種技法，形成實量體展示空間及文物庫房、虛量體公共接待空間與穿透連接空間，象徵著中華、印度與波斯三股文化交織出悠遠流長多元的亞洲文明，而其建築造型由兩個流線型量體交織而成，作為「龍」、「象」、「馬」文化象徵的隱喻。
-                      </p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag tag-yellow">嘉義</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-tree-33451e2f.jpg" class="card-img-top img-fluid" alt="阿里山國家森林遊樂區
-                      ">
-                    </div>
-                      <!-- 愛心點選 -->
-                      <input type="checkbox" id="heartCheckbox14" class="heart-checkbox">
-                      <label for="heartCheckbox14" class="heart-svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                          class="bi bi-heart" viewBox="0 0 18 18">
-                          <path
-                            d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                        </svg>
-                      </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">阿里山國家森林遊樂區
-                        </h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        安平古稱「大員」，是臺灣名稱的由來，不僅有豐富史蹟可供臺灣人尋根，遊客來此可賞夕陽，可夜遊，可觀景，可看海，也可大啖美食。
-                        安平知名古蹟眾多，安平古堡、億載金城、安平樹屋早已是知名景點，來此非得前往一遊不可，其他如東興洋行、海山館、德記洋行、安平小砲臺等，也都有豐富的歷史背景及各具特色的建築風貌，分別呈現荷蘭、鄭氏、清領、日治等不同時期所遺留下來的歷史足跡。臺灣三百多年來最精彩的歷史，皆化作優美的古蹟，留存在安平的結構之中。
-                      </p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag tag-yellow">台南</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-church-ab8a1863.jpg" class="card-img-top img-fluid " alt="台南水晶教堂">
-                    </div>
-                    <!-- 愛心點選 -->
-                    <input type="checkbox" id="heartCheckbox15" class="heart-checkbox">
-                    <label for="heartCheckbox15" class="heart-svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 18 18">
-                        <path
-                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                      </svg>
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">水晶教堂</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        水晶教堂位於洲北鹽田與中洲鹽田交界。西濱空曠平坦，早年以鹽田為最大地景，突出於地表者為鹽堆，水晶教堂即以鹽堆之大堆連結小堆為造形意象。以鹽的白色為主色調，取結晶鹽的晶瑩剔透為其發想，結合曾經撫慰無數烏腳病患的教會意念，乃有水晶教堂此名。
-                      </p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag tag-yellow">台南</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-grass-142886ab.jpg" class="card-img-top img-fluid" alt="四草綠色隧道">
-                    </div>
-                    <!-- 愛心點選 -->
-                    <input type="checkbox" id="heartCheckbox16" class="heart-checkbox">
-                    <label for="heartCheckbox16" class="heart-svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 18 18">
-                        <path
-                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                      </svg>
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">四草綠色隧道</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        四草綠色隧道所指的是四草大眾廟後方排水道的紅樹林區，這條河道因兩側遍佈樹齡逾50年的原生紅樹林，自然形成一彎如隧道般的景象，號稱「迷你版亞馬遜森林」，同時也是臺灣唯一的水上綠色河道。
-                        四草綠色隧道的航行路線分成兩條：紅樹林隧道及四草台江之旅，在上竹筏之前，每位乘客都需要穿上救生衣，再領取遮陽和保護頭部的斗笠，準備妥當後就可以登上竹筏，開啟這場綠色隧道探險啦！</p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag tag-yellow">台南</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/attraction5-0b902b19.png" class="card-img-top img-fluid" alt="安平古堡">
-                    </div>
-                    <!-- 愛心點選 -->
-                    <input type="checkbox" id="heartCheckbox17" class="heart-checkbox">
-                    <label for="heartCheckbox17" class="heart-svg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
-                        class="bi bi-heart" viewBox="0 0 18 18">
-                        <path
-                          d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                      </svg>
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">安平古堡</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        安平古稱「大員」，是臺灣名稱的由來，不僅有豐富史蹟可供臺灣人尋根，遊客來此可賞夕陽，可夜遊，可觀景，可看海，也可大啖美食。
-                        安平知名古蹟眾多，安平古堡、億載金城、安平樹屋早已是知名景點，來此非得前往一遊不可，其他如東興洋行、海山館、德記洋行、安平小砲臺等，也都有豐富的歷史背景及各具特色的建築風貌，分別呈現荷蘭、鄭氏、清領、日治等不同時期所遺留下來的歷史足跡。臺灣三百多年來最精彩的歷史，皆化作優美的古蹟，留存在安平的結構之中。
-                      </p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 attractionWrap">
+                    <div class="bg-primary-600" style="text-align: center;margin: auto;padding: 20px;min-height: 150px;">
+        <span class="loader"></span>
+    </div>
               </div>
               <nav class="mt-10 d-flex justify-content-center">
                 <ul class="pagination mb-0">
@@ -350,8 +177,12 @@
     </div>
   </div>
 </footer>
+      <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+      <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         
         
+        
+        <!-- <script type="module" src="../assets/js-json/all-json.js"></script> -->
         
 </body>
 

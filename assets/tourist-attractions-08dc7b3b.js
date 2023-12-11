@@ -1,4 +1,4 @@
-import"./main-f113c58e.js";import"./border-72444186.js";import{a as u}from"./config-574966d6.js";document.getElementById("heart3");let i=[];const s=document.querySelector(".attractionWrap");function f(t={}){axios.get(`${u}/attractionsList`).then(function(a){i=a.data,d(),t.changeAttractions&&t.changeAttractions(),t.displayTotalCount&&t.displayTotalCount(),t.displayAreaCounts&&t.displayAreaCounts()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function l(t){return` 
+import"./main-f113c58e.js";import"./border-72444186.js";import{a as u}from"./config-3d28a90d.js";document.getElementById("heart3");let i=[];const s=document.querySelector(".attractionWrap");function f(t={}){axios.get(`${u}/attractionsList`).then(function(a){i=a.data,d(),t.changeAttractions&&t.changeAttractions(),t.displayTotalCount&&t.displayTotalCount(),t.displayAreaCounts&&t.displayAreaCounts()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function l(t){return` 
     <div class="col">
     <div class="card card-att h-100">
       <span class="tag text-white">${t.area}</span>

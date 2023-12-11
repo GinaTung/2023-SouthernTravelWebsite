@@ -4,6 +4,18 @@
   height: 0;
   padding-top: 80%; // 調整 padding-top，使高度為寬度的百分之82.5
 
+  @include pc-xl {
+    padding-top: 125%;
+  }
+  @include pc-xl-min {
+    padding-top: 95%;
+  }
+  @include pc-xxl-min {
+    padding-top: 85%;
+  }
+  @include pc-lg {
+    padding-top: 82.5%;
+  }
   .first-img,
   .second-img {
     width: 95%;
@@ -15,7 +27,7 @@
 
   .second-img {
     top: 0;
-    right: 0; 
+    right: 0;
     z-index: 2; // 使 second-img 在上方
   }
 
@@ -24,6 +36,18 @@
     left: 0;
     right: 32px; // 從右邊保持32px的距離
     z-index: 1; // 使 first-img 在下方
+    @include pc-lg {
+      top: 16px; // 從左下角開始
+      left: 0;
+      right: 16px;
+    }
+  }
+}
+.row {
+  .col-md-7 {
+    .tab-content {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -32,29 +56,18 @@
   border-radius: 24px !important;
 }
 .list-group-item.active {
-  outline: 2px solid $primary-400 !important;
+  border: 2px solid $primary-400 !important;
   border-radius: 24px !important;
 }
 
 .card-attractions {
   position: relative;
-  img {
+  .card-attractions-img {
     border-radius: 24px;
     display: block;
-  }
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-    img {
-      content: url("../images/favorite_border.png");
+    @include pad-md {
+      height: 400px;
+      object-fit: cover;
     }
   }
   .mask {
@@ -70,7 +83,9 @@
     color: #fff;
     opacity: 0.6;
     transition: opacity 0.3s ease;
-
+    @include pc-lg {
+      padding: 16px;
+    }
     &:before {
       content: "";
       position: absolute;
@@ -81,7 +96,6 @@
       background: rgba(0, 0, 0, 0.6);
       border-radius: 24px;
     }
-
     p {
       z-index: 1;
     }
@@ -92,31 +106,16 @@
   }
 }
 
-.heart-checkbox:checked + .heart img {
-  content: url("../images/favorite_fill.png");
-}
-
 .image-mask {
   position: relative;
-  img {
+  .image-mask-img {
     border-radius: 24px;
     display: block;
+    object-fit: cover;
+    width: 100%;
+    height: auto; /* 或者 height: 100%; */
   }
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-    img {
-      content: url("../images/favorite_border.png");
-    }
-  }
+
   .mask {
     position: absolute;
     margin: auto;
@@ -131,6 +130,9 @@
     color: #fff;
     opacity: 0.4;
     transition: opacity 0.3s ease;
+    @include pc-xl {
+      padding: 16px;
+    }
 
     &:before {
       content: "";
@@ -142,52 +144,59 @@
       background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 60%);
       border-radius: 24px;
     }
+
     p {
       z-index: 1;
     }
   }
-  &:hover .mask {
-    opacity: 1;
-  }
-}
 
-.card-travel-plan {
-  position: relative;
-  .tag {
-    position: absolute;
-    left: 32px;
-    top: -2px;
-    background-repeat: no-repeat;
-    writing-mode: vertical-rl;
-    letter-spacing: 6px;
-  }
-  .heart-checkbox {
-    display: none; /* 隐藏复选框 */
-  }
-  .heart {
-    position: absolute;
-    right: 16px;
-    top: 16px;
-    background: $white;
-    border-radius: 48px;
-    cursor: pointer;
-    z-index: 2;
-    img {
-      content: url("../images/favorite_border.png");
+  &:hover {
+    .mask {
+      opacity: 1;
     }
   }
 }
+//调整图片高度
 
+.image-mask {
+  .img-size-attractions-1 {
+    // min-height: 33.5%;
+    // height: 170px;
+    @include pc-lg {
+      height: 400px;
+    }
+  }
+  .img-size-attractions-2 {
+    // min-height: 65%;
+    // height: 460px;
+    @include pc-lg {
+      height: 400px;
+    }
+  }
+}
+.card-travel-plan {
+  position: relative;
+}
 
 .material-symbols-outlined {
   color: black;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
 
-.list-group-item + .list-group-item.active{
+.list-group-item + .list-group-item.active {
   margin-top: 0 !important;
+}
+
+//search-bar-input & button position
+
+.search-btn-cerulean-blue-position {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  @include pad-md {
+    margin-top: 40px;
+    left: 50%;
+    transform: translate(-50%, 20%);
+  }
 }

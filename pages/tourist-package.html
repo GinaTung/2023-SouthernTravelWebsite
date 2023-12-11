@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tourist-package</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="banner-ad d-flex justify-content-center align-items-center">
+      <p class="fs-1 text-center">南部旅遊方案</p>
+    </div>
+    <div class="tourist-attractions-list">
+      <div class="container py-30">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item active" aria-current="page">南部旅方案</li>
+          </ol>
+        </nav>
+        <div class="tourist-list">
+          <div class="row">
+            <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
+              <div class="border-info2 border-1 border">
+                <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color active d-flex justify-content-between" aria-current="page"
+                      href="tourist-package.html">全部區域<span>12</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between"
+                      href="#">嘉義<span>3</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-9">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                <div class="col">
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="../assets/images/plan3.png" class="card-img-top img-fluid " alt="歷史探訪之旅1日遊">
+                    </div>
+                    <input type="checkbox" id="heartCheckbox9" class="heart-checkbox">
+                    <label for="heartCheckbox9" class="heart p-1 p-xl-2">
+                      <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title  d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">歷史探訪之旅1日遊</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        歷史探訪之旅1日遊
+                      </p>
+                    </div>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="../assets/images/pic-grass.jpg" class="card-img-top img-fluid" alt="四草綠色隧道">
+                    </div>
+                    <input type="checkbox" id="heartCheckbox10" class="heart-checkbox">
+                    <label for="heartCheckbox10" class="heart p-1 p-xl-2">
+                      <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title  d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">綠色隧道一日遊</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        綠色隧道一日遊</p>
+                    </div>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card card-att h-100">
+                    <span class="tag text-white">台南</span>
+                    <div class="card-att-img">
+                      <img src="../assets/images/attraction5.png" class="card-img-top img-fluid" alt="安平古堡">
+                    </div>
+                    <input type="checkbox" id="heartCheckbox11" class="heart-checkbox">
+                    <label for="heartCheckbox11" class="heart p-1 p-xl-2">
+                      <img src="../assets/images/favorite_border.png" alt="heart" class="img-fluid">
+                    </label>
+                    <div class="card-body card-body-att">
+                      <div class="card-title  d-flex justify-content-between align-items-center">
+                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">古早美食雙日遊</h4>
+                      </div>
+                      <p class="card-text card-font-truncate">
+                        古早美食雙日遊
+                      </p>
+                    </div>
+                    <div class="card-footer text-end border-0">
+                      <a href="#" class="fs-5">more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/ad'); -%>
+      <%- include('./layout/footer'); -%>
+
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>

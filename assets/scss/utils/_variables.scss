@@ -302,6 +302,7 @@ $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
+$info2:         #D5F3F4 !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
@@ -397,7 +398,8 @@ $spacers: (//*custom
   17: $spacer * 4.25,
   18: $spacer *4.5,//72
   19: $spacer * 4.75,
-  20: $spacer * 5,
+  20: $spacer * 5,//80
+  25: $spacer *6.25,//100
   30: $spacer * 7.5
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -409,6 +411,9 @@ $spacers: (//*custom
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  5: 5%,
+  // 15:15%,
+  // 25: 25%,
   50: 50%,
   75: 75%,//custom
   100: 100%
@@ -452,7 +457,7 @@ $paragraph-margin-bottom:   0px !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 769px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -610,7 +615,7 @@ $font-sizes: (
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
+$headings-margin-bottom:      $spacer * 0 !default;//custom
 $headings-font-family:        null !default;
 $headings-font-style:         null !default;
 $headings-font-weight:        500 !default;
@@ -1266,7 +1271,7 @@ $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
 $card-cap-padding-x:                $card-spacer-x !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       #ffff !default;//custom
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;

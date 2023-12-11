@@ -1,6 +1,9 @@
+
 .img-lg{
+    font-size: 36px;
     @include pc-lg{
-        width: 32px;
-        height: 32px;
+        font-size: 32px;
     }
 }
+
+

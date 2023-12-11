@@ -1,0 +1,18 @@
+.tag {
+    padding: 8px 8px 24px 8px;
+    background-color: $primary-500;
+    position: absolute;
+    left: 16px;
+    top: 0;
+    /* 轉成直方向 */
+    writing-mode: vertical-rl;
+    line-height: 1;
+    letter-spacing: 6px;
+    z-index: 2;
+    /* 使用 clip-path 裁剪成三角形 */
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 80%, 0 100%, 0 0);
+  }
+.tag-yellow{
+  background-color: $secondary-200;
+  color: $primary-700;
+}

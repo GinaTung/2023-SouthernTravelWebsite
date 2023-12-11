@@ -25,9 +25,17 @@
   background: $primary-600;
   border-radius: 40px !important;
   color: $white;
+  @include pad-md{
+    padding: 8px 40px;
+  }
   &:hover {
     background: $dark;
     color: $white !important;
+  }
+}
+.btn-cerulean-blue-spacer{
+  @include pc-lg{
+    padding: 8px 21px;
   }
 }
 .z-index-1{
@@ -35,4 +43,18 @@
 }
 .z-index-2{
   z-index: 2 !important;
+}
+.z-index-3{
+  z-index: 3 !important;
+}
+.btn-golden-yellow {
+  text-align: center;
+  padding: 8px 24px;
+  background: $secondary-200;
+  color: #09484A;
+  border-radius: 40px;
+  &:hover {
+    background: #09484A; /* 調整為深色金黃色 */
+    color:  $secondary-200 !important;
+  }
 }

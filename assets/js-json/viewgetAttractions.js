@@ -1,4 +1,5 @@
 import { api_url } from "./config.js";
+import dbData from './db.json';
 export let attractionsData = [];
 export const attractionList = document.querySelector(".attractionWrap");
 //產品列表
@@ -28,34 +29,41 @@ export function getAttractionList(callbacks = {}) {
     });
 }
 
+// const attractionsList = dbData.attractionsList;
 //組合列表
-export function combineAttractionItem(item) {
+export function combineAttractionItem(item, attractionsList) {
+  const attraction = attractionsList.find(attraction => attraction.attractionId === item.attractionId);
+
+  if (!attraction) {
+    console.error(`Attraction not found for attractionId: ${item.attractionId}`);
+    return '';
+  }
+
   return ` 
     <div class="col">
-    <div class="card card-att h-100">
-      <span class="tag text-white">${item.area}</span>
-      <div class="card-att-img">
-        <img src=".${item.images}" class="card-img-top img-fluid " alt="${item.title}">
-      </div>
-      <div class="heart3">
-        <i class="bi bi-heart heart-click" data-heartStatus="false" data-heartId="${item.attractionId}"></i>
-      </div>
-      <div style="transform: rotate(0);">
-        <div class="card-body card-body-att">
-          <div class="card-title  d-flex justify-content-between align-items-center card-title-att">
-            <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">${item.title}</h4>
+      <div class="card card-att h-100">
+        <span class="tag text-white">${item.area}</span>
+        <div class="card-att-img">
+          <img src="/assets/images${attraction.images}" class="card-img-top img-fluid" alt="${item.title}">
+        </div>
+        <div class="heart3">
+          <i class="bi bi-heart heart-click" data-heartStatus="false" data-heartId="${item.attractionId}"></i>
+        </div>
+        <div style="transform: rotate(0);">
+          <div class="card-body card-body-att">
+            <div class="card-title d-flex justify-content-between align-items-center card-title-att">
+              <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">${item.title}</h4>
+            </div>
+            <p class="card-text card-font-truncate">
+              ${item.description}
+            </p>
           </div>
-          <p class="card-text card-font-truncate">
-          ${item.description}
-          </p>
+          <div class="card-footer text-end border-0">
+            <a href="tourist-chiayi-1.html?attractionId=${item.attractionId}" class="fs-5 stretched-link">more</a>
+          </div>
         </div>
-        <div class="card-footer text-end border-0">
-          <a href="tourist-chiayi-1.html?attractionId=${item.attractionId}" class="fs-5 stretched-link">more</a>
-        </div>
-
       </div>
-    </div>
-  </div>`;
+    </div>`;
 }
 //渲染
 export function renderAttractions() {

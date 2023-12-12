@@ -1,15 +1,22 @@
-const dbData = require('./db.json');
-const imageUrls = dbData.images;
+// App.js
+import dbData from './db.json';
 
 function App() {
-  return (
+  const imageUrls = dbData.images;
+
+  const renderImages = () => {
+    return imageUrls.map((imageUrl, index) => (
+      `<img key="${index}" src="${imageUrl}" alt="Image ${index}" />`
+    ));
+  };
+
+  return `
     <div>
-      {imageUrls.map((imageUrl, index) => (
-        <img key={index} src={`/${imageUrl}`} alt={`Image ${index}`} />
-      ))}
-      {/* 其他內容 */}
+      ${renderImages().join('')}
+      <!-- 其他內容 -->
+      test
     </div>
-  );
+  `;
 }
 
 export default App;

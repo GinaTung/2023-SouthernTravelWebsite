@@ -1,4 +1,5 @@
 import { api_url } from "./config.js";
+
 export let attractionsData = [];
 export const attractionList = document.querySelector(".attractionWrap");
 //產品列表

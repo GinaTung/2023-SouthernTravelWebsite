@@ -1,4 +1,4 @@
-import"./main-da1d103c.js";import{a as l}from"./config-574966d6.js";const e=document.querySelector(".attraction-plans-wrap");let t=[];c();function c(){axios.get(`${l}/attractionPlansList`).then(function(a){t=a.data,console.log(t),o()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function r(a){return` 
+import"./main-da1d103c.js";import{a as l}from"./config-3d28a90d.js";const e=document.querySelector(".attraction-plans-wrap");let t=[];c();function c(){axios.get(`${l}/attractionPlansList`).then(function(a){t=a.data,console.log(t),o()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function r(a){return` 
     <div class="col-12 col-md-6 col-lg-4 ">
     <div class="card card-att h-100">
       <span class="tag text-white">${a.area}</span>

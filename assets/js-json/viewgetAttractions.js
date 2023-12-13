@@ -32,7 +32,7 @@ export function getAttractionList(callbacks = {}) {
 //組合列表
 export function combineAttractionItem(item) {
   return ` 
-    <div class="col">
+    <div class="col-12 col-md-6 col-lg-4">
     <div class="card card-att h-100">
       <span class="tag text-white">${item.area}</span>
       <div class="card-att-img">

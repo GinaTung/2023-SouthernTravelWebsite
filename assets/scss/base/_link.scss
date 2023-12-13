@@ -11,10 +11,12 @@
       color: $primary-500 !important;
     }
   
+    
   .nav-link.active {
     background-color: $primary-200;
     color: $primary-500;
   }
+
   .link-color2:active{
     background-color: $secondary-200;
     color: $primary-700;
@@ -24,6 +26,7 @@
     background-color: $secondary-200;
     color: $secondary-600 !important;
   }
+
   .nav-link2.active {
     background-color: $secondary-200;
     color: $secondary-600;

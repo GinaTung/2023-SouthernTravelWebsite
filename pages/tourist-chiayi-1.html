@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tourist-attractions</title>
+  <title>南部旅遊景點</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <div class="tourist-attractions-list">
       <div class="container py-10 py-lg-30">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-5 pb-lg-20">
-          <ol class="breadcrumb mb-0">
+          <ol class="breadcrumb mb-0 fs-5">
             <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
             <li class="breadcrumb-item" aria-current="page"><a href="tourist-attractions.html">南部旅遊景點</a></li>
             <li class="breadcrumb-item"><a href="tourist-chiayi.html">嘉義</a></li>
@@ -27,45 +27,88 @@
           <div class="row">
             <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
               <div class="border-info2 border-1 border">
+                <a href="tourist-chiayi-1.html" class="nav-link fs-5 p-5 link-color2 d-block active">回到目前景點介紹</a>
                 <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column attractions-select">
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between"
-                      href="tourist-attractions.html">全部區域<span>12</span>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="全部"
+                      aria-current="page" href="#">全部區域<span class="attractionsNum3"></span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between active" href="#"
-                      aria-current="page">嘉義<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between " href="#"
+                      data-name="嘉義">嘉義<span class="attractionsNum4"></span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#"
+                      data-name="台南">台南<span class="attractionsNum4">1</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="高雄">高雄<span
+                        class="attractionsNum4">1</span></a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-md-9 d-flex flex-column justify-content-center align-items-center bg-primary-600">
-              <%- include('./layout/loader2'); -%>
+            <div class="col-12 col-md-9">
+              <div class="row g-3 attractionWrap">
+                <div class="col-12 d-flex justify-content-between">
+                  <div class="col-8 pe-2">
+                    <img src="../assets/images/pic-church2.jpg" alt="高跟鞋教堂" class="card-img-top img-fluid"
+                      style="object-fit: cover;height: 380px;">
+                  </div>
+                  <div class="col-4 d-flex flex-column justify-content-between ps-1">
+                    <div class="border">
+                      <img src="../public/assets/img/pic-church2-2.jpg" class="card-img-top img-fluid" alt=""
+                        style="object-fit: cover;height: 120px;">
+                    </div>
+                    <div class="border">
+                      <img src="../public/assets/img/pic-church2-2.jpg" class="card-img-top img-fluid" alt=""
+                        style="object-fit: cover;height: 120px;">
+                    </div>
+                    <div class="border">
+                      <img src="../public/assets/img/pic-church2-2.jpg" class="card-img-top img-fluid" alt=""
+                        style="object-fit: cover;height: 120px;">
+                    </div>
+                  </div>
+                </div>
+                <div class="tourist-intr-content">
+                  <div class="intr-title d-flex mb-4 fs-3">
+                    <span class="fs-3 me-2">嘉義</span>
+                    <p class="fs-3 me-2">高跟鞋教堂</p>
+                    <div class="heart4">
+                      <i class="bi bi-heart"></i>
+                    </div>
+                  </div>
+                  <p class="fs-5 mb-3">
+                    高跟鞋教堂高度約17m，寬度約11m，主結構由1,269根鋼架組成，外表共約320餘片玻璃，造型相當亮麗美觀，其設計與裝設不僅是全臺第一，更是全世界唯一。高跟鞋教堂幸福意象工程施工相當不易，320餘片玻璃大小、安裝角度皆不同，必須克服高跟鞋的形狀及彎曲幅度，故鋼架及玻璃組裝精度要求極高。玻璃高跟鞋象徵「每個小女孩都曾夢想有雙漂亮的高跟鞋，伴著自己走出美麗優雅的人生。」
+                  </p>
+                  <p class="fs-5 mb-4"></p>
+                  <p class="fs-5 mb-4">開放時間：全天開放</p>
+                  <p class="fs-5 mb-3">交通資訊：</p>
+                  <div class="d-flex justify-content-between">
+                    <p class="fs-5 mb-3">自行開車：<br>
+                      國道1號→嘉義系統交流道下→省道臺82線→縣道157線→省道臺17線→上海路→布新橋→中山路→海興街。<br>
+                      大眾運輸：
+                      搭臺鐵至新營站下—轉搭台灣好行61西濱快線至高跟鞋教堂站下。<br>
+                      搭高鐵或臺鐵至嘉義站下—轉搭嘉義客運7209H、7209J、嘉義縣公車7327D、7327E、7327H至布新橋站下。</p>
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3662.3033711835387!2d120.14962!3d23.37724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1702460293397!5m2!1szh-TW!2stw"
+                      width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <%- include('./layout/ad'); -%>
-      <!-- <h1>我是contact</h1>
-    <div class="border-top-sm">
-      12315646
-    </div>
-    <button type="button" class="plusOne">＋1</button> -->
       <%- include('./layout/footer'); -%>
-      <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
         <script type="module" src="../assets/js/border.js"></script>
-        <script type="module" src="../assets/js/all.js"></script>
         <script type="module" src="../assets/js-json/viewSingleAttraction.js"></script>
-        <!-- <script type="module" src="../assets/js-json/all-json.js"></script> -->
         <script type="module" src="../main.js"></script>
 </body>
 

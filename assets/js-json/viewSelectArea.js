@@ -1,4 +1,4 @@
-import { attractionsData, getAttractionList, attractionList, combineAttractionItem, renderAttractions} from "./viewgetAttractions.js";
+import { attractionsData, getAttractionList, attractionList, combineAttractionItem, renderAttractions} from "./viewGetAttractions.js";
 
 const attractionsSelect = document.querySelector(".attractions-select");
 const attractionsNum = document.querySelector(".attractionsNum");

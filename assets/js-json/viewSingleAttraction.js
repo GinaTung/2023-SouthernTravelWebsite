@@ -1,8 +1,8 @@
-import { attractionList, combineAttractionItem} from "./viewgetAttractions.js";
+import { attractionList, combineAttractionItem, paginationArea} from "./viewGetAttractions.js";
 import { api_url } from "./config.js";
 let attractionsData2 = [];
-const attractionsNum3 = document.querySelector(".attractionsNum3");
-const attractionsNum4 = document.querySelectorAll(".attractionsNum4");
+const attractionsNum3 = document.querySelector(".attractionsNum");
+const attractionsNum4 = document.querySelectorAll(".attractionsNum2");
 const attractionsSelect2 = document.querySelector(".attractions-select");
 function getAttractionData2() {
   axios
@@ -21,7 +21,6 @@ function getAttractionData2() {
 
 getAttractionData2();
 changeAttractions2();
-
 // 顯示總筆數
 function displayTotalCount() {
   attractionsNum3.textContent = attractionsData2.length;
@@ -44,15 +43,6 @@ function displayAreaCounts() {
     });
   }
 
-  // function currentLink(){
-  //   const currentLink =document.querySelector(".current-link");
-  //   currentLink.addEventListener("click",function(e){
-  //     e.preventDefault();
-  //     currentLink.classList.add("active");
-  //     currentLink.href = window.location.href;
-  //   })
-  // }
-  // currentLink()
   //監聽篩選
  function changeAttractions2() {
   attractionsSelect2.addEventListener("click", function (e) {
@@ -70,25 +60,44 @@ function displayAreaCounts() {
     }
   });
 }
+function showLoader() {
+  attractionList.innerHTML = `
+    <div class="bg-primary-600 w-100 mt-3" style="text-align: center;margin: auto;padding: 20px;min-height: 150px;">
+      <span class="loader"></span>
+    </div>
+  `;
+}
+
 function renderAttractions2() {
   let str = "";
+  let str2="";
   attractionsData2.forEach(function (item) {
     str += combineAttractionItem(item);
   });
-  attractionList.innerHTML = str;
+  str2 = paginationArea();
+  attractionList.innerHTML = str+str2;
 }
 
 attractionsSelect2.addEventListener("click", function (e) {
   const selectArea = e.target.dataset.name;
   if (selectArea === "全部") {
+    showLoader(); // 顯示 loader
     renderAttractions2();
-    return;
-  }
-  let str = "";
-  attractionsData2.forEach(function (item) {
-    if (String(item.area) === String(selectArea)) {
-      str += combineAttractionItem(item);
+  } else {
+    let hasMatchingItem = false;
+    let str = "";
+    attractionsData2.forEach(function (item) {
+      if (String(item.area) === String(selectArea)) {
+        str += combineAttractionItem(item);
+        hasMatchingItem = true; // 找到符合條件的項目
+      }
+    });
+    if (!hasMatchingItem) {
+      showLoader(); // 顯示 loader
+    } else {
+      let str2="";
+      str2 = paginationArea();
+      attractionList.innerHTML = str+str2;
     }
-  });
-  attractionList.innerHTML = str;
+  }
 });

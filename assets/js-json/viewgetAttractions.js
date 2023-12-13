@@ -58,13 +58,28 @@ export function combineAttractionItem(item) {
     </div>
   </div>`;
 }
+export function paginationArea(){
+  return`
+  <nav class="mt-10 d-flex justify-content-center">
+                <ul class="pagination mb-0">
+                  <li class="page-item"><a class="page-link" href="#">上一頁</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">下一頁</a></li>
+                </ul>
+              </nav> 
+  `
+}
 //渲染
 export function renderAttractions() {
   let str = "";
+  let str2="";
   attractionsData.forEach(function (item) {
     str += combineAttractionItem(item);
   });
-  attractionList.innerHTML = str;
+  str2 = paginationArea();
+  attractionList.innerHTML = str+str2;
 }
 
 attractionList.addEventListener("click", function (e) {

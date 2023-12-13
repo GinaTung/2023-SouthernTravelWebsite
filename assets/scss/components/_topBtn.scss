@@ -1,0 +1,20 @@
+.top-btn {
+  z-index: 99;
+  position: fixed; //fixed = 畫面的絕對位置，所以會跟著跑
+  padding: 16px 8px;
+  font-size: 26px;
+  bottom: 50px; //離下面30 pixel
+  right: 30px; //離右邊30 pixel
+  border-radius: 50px; //半徑圓
+  background-color: $primary-400; //背景色
+  color: $secondary-200;
+  &:hover {
+    // opacity: 0.7; //透明度
+    color: $primary-400;
+    background-color: $secondary-200; //背景色
+  }
+  @include pc-lg{
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+}

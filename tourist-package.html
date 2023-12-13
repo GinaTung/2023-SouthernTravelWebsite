@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tourist-package</title>
-  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-cdbc0d93.js"></script>
-  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-bbfd8a4b.css">
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/tourist-package-49781824.js"></script>
+  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/main-da1d103c.js">
+  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/config-574966d6.js">
+  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-18c6b8a1.css">
 </head>
 
 <body>
@@ -41,12 +43,13 @@
     </div>
   </div>
 </nav>
+    <a href="#" class="top-btn" type="button">TOP</a>
     <div class="banner-ad d-flex justify-content-center align-items-center">
       <p class="fs-1 text-center">南部旅遊方案</p>
     </div>
     <div class="tourist-attractions-list">
-      <div class="container py-30">
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-20">
+      <div class="container py-10 py-lg-30">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-5 pb-lg-20">
           <ol class="breadcrumb mb-0 fs-5">
             <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
             <li class="breadcrumb-item active" aria-current="page">南部旅方案</li>
@@ -57,95 +60,55 @@
             <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
               <div class="border-info2 border-1 border">
                 <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
-                <ul class="nav flex-column">
+                <ul class="nav flex-column attraction-plans-select">
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color active d-flex justify-content-between" aria-current="page"
-                      href="tourist-package.html">全部區域<span>12</span>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="全部"
+                      aria-current="page" href="#">全部區域<span class="attractionsNum"></span>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between"
-                      href="#">嘉義<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between " href="#"
+                      data-name="嘉義">嘉義<span class="attractionsNum2"></span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#">台南<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" href="#"
+                      data-name="台南">台南<span class="attractionsNum2">1</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between">高雄<span>3</span></a>
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="高雄">高雄<span
+                        class="attractionsNum2">1</span></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-12 col-md-9">
-              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-                <div class="col">
+              <div class="row g-3 attraction-plans-wrap">
+                <!-- <div class="bg-primary-600 w-100 mt-3 d-flex flex-column align-items-center justify-content-center" style="text-align: center;margin: auto;padding: 20px;min-height: 200px;">
+    <span class="loader"></span>
+</div> -->
+                <div class="col-12 col-md-6 col-lg-4 ">
                   <div class="card card-att h-100">
                     <span class="tag text-white">台南</span>
                     <div class="card-att-img">
                       <img src="/2023-SouthernTravelWebsite/assets/plan3-febb40a2.png" class="card-img-top img-fluid " alt="歷史探訪之旅1日遊">
                     </div>
-                    <input type="checkbox" id="heartCheckbox9" class="heart-checkbox">
-                    <label for="heartCheckbox9" class="heart p-1 p-xl-2">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">歷史探訪之旅1日遊</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        歷史探訪之旅1日遊
-                      </p>
+                    <div class="heart3">
+                      <i class="bi bi-heart heart-click"></i>
                     </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
+                    <div class="card-body card-body-att">
+                      <div class="card-title d-flex align-items-center">
+                        <i class="bi bi-geo-fill me-1 fs-6 fs-lg-5 text-primary-700"></i>
+                        <p class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">台南</p>
+                      </div>
+                      <h4 class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">歷史探訪之旅1日遊</h4>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between border-0 pt-0">
+                      <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5"></i>
+                      <span class="fs-6 fs-lg-5">$7500</span>
                     </div>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag text-white">台南</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/pic-grass-142886ab.jpg" class="card-img-top img-fluid" alt="四草綠色隧道">
-                    </div>
-                    <input type="checkbox" id="heartCheckbox10" class="heart-checkbox">
-                    <label for="heartCheckbox10" class="heart p-1 p-xl-2">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">綠色隧道一日遊</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        綠色隧道一日遊</p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card card-att h-100">
-                    <span class="tag text-white">台南</span>
-                    <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/attraction5-0b902b19.png" class="card-img-top img-fluid" alt="安平古堡">
-                    </div>
-                    <input type="checkbox" id="heartCheckbox11" class="heart-checkbox">
-                    <label for="heartCheckbox11" class="heart p-1 p-xl-2">
-                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKGSURBVHgB7VbtbRpBEH172HKixIh0QAmUABXY+YlJBFuBoQKgApwK7lACzs+kAiiBDkIJCBKJ2OYmO3vc3idwR/CPKH4Sur3l7by3o7nZBV7wv0Ps+qNk22VXvL4F3Gv1Wt5Ozwhi9kjr/lrKeZj/1v5ctcT5VVb+XgPF4egWJO6w17roLZv1vuY744F6tLPy9xooDu+7IOoFM7RQu5huyRUEuwOBHAGLR60s/DQTEQOX9qglhLBNIBJyJW++pXC6kcAe5i5t5E/5cZrkQ2VIlPhdcWphjhUJIUTTH7rkvo+LM1ay4VgkamwwLP6g5uLiPp9jBRKFbkTSH3hFd/FDv5D4vpT1a+wB78wYJnxKMxvhO+OJEqvy2KLf7xZS6g2c+YQnnJWDdNAUB8A7Uw8HWUE0VIarPNzggp/asNFUxVQ23Gh6nxXGgIuHGYwZr2BOCQEyMQmbRcLAuSokQxC4wolBwjIxz/A0SxjgoiBgCu0WVe5sOBG4wP0CZA2/ACMG9J+0MU3CEoUBTgT1dU3SNBIG+Dv2s6BQKTpf/9qE7qzbpqU6pBPvFVZ8QUF1v6DJuO2iPW7jSHhnimnr80dC4ixIGFjI+jzcuVRBDC6H4yZyQq8JHWhE6KxV7IMGGDpN5HaMB4KTxwRzeQ0C9f6uTmntCrKUH+54YV4TaeJL2ejt4gscQNEe9eCdfl48gdaqeTM8hTjDwgHoALFMbCs7alTN5RXX8ZAR8UxEbkTxS0xG8VwGPBNf2hDWIGxCiXGPbwfaJLcnZSbkMsCI33AC8A0KnTziRxlgvLFHlYLAJDBBiw2h9ks2ZnljHWWAUbLv1Q2KdI/n61hak3l2sIlX6ocX/Mv4A9KZTEiTn/X2AAAAAElFTkSuQmCC" alt="heart" class="img-fluid">
-                    </label>
-                    <div class="card-body card-body-att">
-                      <div class="card-title  d-flex justify-content-between align-items-center">
-                        <h4 class="fs-5 fs-xl-4 fw-bold text-primary-700 card-title-att">古早美食雙日遊</h4>
-                      </div>
-                      <p class="card-text card-font-truncate">
-                        古早美食雙日遊
-                      </p>
-                    </div>
-                    <div class="card-footer text-end border-0">
-                      <a href="#" class="fs-5">more</a>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -224,14 +187,15 @@
     </div>
   </div>
   <div class="bg-light2">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p href="" class=""></p>
+    <div class="container d-flex justify-content-center  justify-content-md-between align-items-center">
+      <p href="#" class="d-none d-md-block"></p>
       <p class="text-center text-dark py-6">© 2023 Willmeow All Rights Reserved.</p>
-      <a href="favorite-list.html" class="">我的收藏</a>
+      <a href="favorite-list.html" class="d-none d-md-block">我的收藏</a>
     </div>
   </div>
 </footer>
-
+        <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+        
         
 </body>
 

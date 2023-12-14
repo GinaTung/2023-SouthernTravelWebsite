@@ -67,7 +67,7 @@
         "thirdDayPM":"",
         "title": "歷史探訪之旅1日遊",
         "area": "台南",
-        "planPrice":"7500",
+        "planPrice":"$7500",
         "dayCount":"一日遊"
       },
       {
@@ -85,7 +85,7 @@
         "thirdDayPM":"",
         "title": "阿里山芬多精之雙日遊",
         "area": "嘉義",
-        "planPrice":"24000",
+        "planPrice":"$24000",
         "dayCount":"雙日遊"
       },
       {
@@ -103,7 +103,7 @@
         "thirdDayPM":"",
         "title": "綠色隧道一日遊",
         "area": "台南",
-        "planPrice":"7500",
+        "planPrice":"$7500",
         "dayCount":"一日遊"
       },
       {
@@ -121,7 +121,7 @@
         "thirdDayPM":"",
         "title": "海陸體驗，玩食高雄雙日遊",
         "area": "高雄",
-        "planPrice":"19900",
+        "planPrice":"$19900",
         "dayCount":"雙日遊"
       },
       {
@@ -139,7 +139,7 @@
         "thirdDayPM":"",
         "title": "亞灣區精選夜間路線",
         "area": "高雄",
-        "planPrice":"9999",
+        "planPrice":"$9999",
         "dayCount":"一日遊"
       }
     ]

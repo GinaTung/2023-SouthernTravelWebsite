@@ -1,5 +1,4 @@
 import { api_url } from "./config.js";
-
 export let attractionsData = [];
 export const attractionList = document.querySelector(".attractionWrap");
 //產品列表
@@ -10,6 +9,7 @@ export function getAttractionList(callbacks = {}) {
       attractionsData = response.data;
       // console.log(response.data);
       renderAttractions();
+
       //以下為viewSelectArea.js
       if (callbacks.changeAttractions) {
         callbacks.changeAttractions();
@@ -22,6 +22,7 @@ export function getAttractionList(callbacks = {}) {
       if (callbacks.displayAreaCounts) {
         callbacks.displayAreaCounts();
       }
+
     })
     .catch(function (error) {
       console.log(error);
@@ -57,6 +58,7 @@ export function combineAttractionItem(item) {
       </div>
     </div>
   </div>`;
+
 }
 export function paginationArea(){
   return`
@@ -82,17 +84,18 @@ export function renderAttractions() {
   attractionList.innerHTML = str+str2;
 }
 
-attractionList.addEventListener("click", function (e) {
-  const heartIcon = e.target.closest(".bi-heart");
-  const heartIconFill = e.target.closest(".bi-heart-fill");
+  attractionList.addEventListener("click", function (e) {
+    const heartIcon = e.target.closest(".bi-heart");
+    const heartIconFill = e.target.closest(".bi-heart-fill");
+  
+    // 判断点击了哪种心形图标
+    if (heartIcon) {
+      handleHeartClick(heartIcon);
+    } else if (heartIconFill) {
+      handleHeartClick(heartIconFill);
+    }
+  });
 
-  // 判断点击了哪种心形图标
-  if (heartIcon) {
-    handleHeartClick(heartIcon);
-  } else if (heartIconFill) {
-    handleHeartClick(heartIconFill);
-  }
-});
 
 function handleHeartClick(heartIcon) {
   // 获取对应景点数据的 ID
@@ -105,8 +108,4 @@ function handleHeartClick(heartIcon) {
   // 使用 toggle 方法切换 "bi-heart" 和 "bi-heart-fill" 之间的类
   heartIcon.classList.toggle("bi-heart");
   heartIcon.classList.toggle("bi-heart-fill");
-
-  // 在这里可以添加更新服务器或其他操作
-
-  // console.log("点击了心形图标，景点ID为:", attractionId, "心形状态为:", heartStatus ? "已选中" : "未选中");
 }

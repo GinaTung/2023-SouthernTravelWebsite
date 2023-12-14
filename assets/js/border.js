@@ -1,8 +1,8 @@
-var navbarToggle = document.querySelector(".navbar-toggler");
-var navbarBorder = document.querySelector(".border-double-bottom");
+document.addEventListener('DOMContentLoaded', function() {
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbar = document.querySelector('.navbar');
 
-navbarToggle.addEventListener("click", function () {
-  // 切換樣式
-  navbarBorder.classList.toggle("rounded-bottom");
-});
-
+    navbarToggler.addEventListener('click', function() {
+      navbar.classList.toggle('rounded-navbar');
+    });
+  });

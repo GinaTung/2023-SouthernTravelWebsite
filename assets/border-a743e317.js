@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".navbar-toggler"),n=document.querySelector(".navbar");e.addEventListener("click",function(){n.classList.toggle("rounded-navbar")})});

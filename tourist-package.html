@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>南部旅遊方案</title>
-  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/tourist-package-0a231d3b.js"></script>
-  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/main-da1d103c.js">
-  <link rel="modulepreload" crossorigin href="/2023-SouthernTravelWebsite/assets/config-3d28a90d.js">
-  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-18c6b8a1.css">
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/main-dbe2640b.js"></script>
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/config-574966d6.js"></script>
+  <script type="module" crossorigin src="/2023-SouthernTravelWebsite/assets/viewGetPackage-f93e0cfd.js"></script>
+  <link rel="stylesheet" href="/2023-SouthernTravelWebsite/assets/main-49fa7007.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white bg-opacity-90 sticky-top py-0 rounded-lg-0 border-double-bottom">
+  <nav class="navbar navbar-expand-lg bg-white sticky-top py-0 bg-opacity-90">
     <div class="container">
-      <a class="navbar-brand py-6 mx-0" href="index.html">
+      <a class="navbar-brand py-6 mx-0 " href="index.html">
         <img src="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png" alt="南部輕旅遊">
       </a>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,13 +31,13 @@
             <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-package.html">南部旅遊方案</a>
           </li>
           <li class="nav-item mb-10 mb-lg-0">
-            <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="#">南部旅遊預算</a>
+            <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-budget.html">南部旅遊預算</a>
           </li>
         </ul>
         
         <div class="d-flex border-top border-top-lg-0 pt-5 pt-lg-0 justify-content-center justify-content-lg-start">
-            <a href="#" class="btn-outline-turquoise" type="button">登入</a>
-            <a href="#" class="btn-turquoise ms-3" type="button">註冊</a>
+            <a href="logIn.html" class="btn-outline-turquoise" type="button">登入</a>
+            <a href="signUp.html" class="btn-turquoise ms-3" type="button">註冊</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
                 <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
                 <ul class="nav flex-column attraction-plans-select">
                   <li class="nav-item">
-                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between" data-name="全部"
+                    <a class="nav-link p-5 fs-5 link-color d-flex justify-content-between active" data-name="全部"
                       aria-current="page" href="#">全部區域<span class="attractionsNum"></span>
                     </a>
                   </li>
@@ -83,14 +83,13 @@
             </div>
             <div class="col-12 col-md-9">
               <div class="row g-3 attraction-plans-wrap">
-                <!-- <div class="bg-primary-600 w-100 mt-3 d-flex flex-column align-items-center justify-content-center" style="text-align: center;margin: auto;padding: 20px;min-height: 200px;">
+                <div class="bg-primary-600 w-100 mt-3 d-flex flex-column align-items-center justify-content-center" style="text-align: center;margin: auto;padding: 20px;min-height: 200px;">
     <span class="loader"></span>
-</div> -->
-                <div class="col-12 col-md-6 col-lg-4 ">
+</div>                <!-- <div class="col-12 col-md-6 col-lg-4 ">
                   <div class="card card-att h-100">
                     <span class="tag text-white">台南</span>
                     <div class="card-att-img">
-                      <img src="/2023-SouthernTravelWebsite/assets/plan3-febb40a2.png" class="card-img-top img-fluid " alt="歷史探訪之旅1日遊">
+                      <img src="../assets/images/plan3.png" class="card-img-top img-fluid " alt="歷史探訪之旅1日遊">
                     </div>
                     <div class="heart3">
                       <i class="bi bi-heart heart-click"></i>
@@ -107,7 +106,7 @@
                       <span class="fs-6 fs-lg-5">$7500</span>
                     </div>
                   </div>
-                </div>
+                </div> -->
 
               </div>
             </div>
@@ -146,7 +145,7 @@
             <a class="nav-link px-5 px-xl-10 fs-6 fs-lg-5 text-dark mb-3 mb-lg-0" href="tourist-package.html">南部旅遊方案</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-5 px-xl-10 fs-6 fs-lg-5 text-dark mb-3 mb-lg-0" href="#">南部旅遊預算</a>
+            <a class="nav-link px-5 px-xl-10 fs-6 fs-lg-5 text-dark mb-3 mb-lg-0" href="tourist-budget.html">南部旅遊預算</a>
           </li>
         </ul>
         <ul class="navbar-nav flex-row fs-add-2">

@@ -43,10 +43,12 @@ function combineAttractionPlanItem(planItem) {
           <i class="bi bi-geo-fill me-1 fs-6 fs-lg-5 text-primary-700"></i>
           <p class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">${planItem.area}</p>
         </div>
-        <h4 class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">${planItem.title}</h4>
+        <h4 class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">
+        <a href="tourist-package-1.html?attractionId=${planItem.attractionPlanId}" class="">${planItem.title}</a>
+        </h4>
       </div>
       <div class="card-footer d-flex justify-content-between border-0 pt-0">
-        <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5"></i>
+        <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5 z-index-3"></i>
         <span class="fs-6 fs-lg-5">${planItem.planPrice}</span>
       </div>
     </div>

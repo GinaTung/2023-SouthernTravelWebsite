@@ -1,6 +1,7 @@
 
 .img-lg{
     font-size: 36px;
+    line-height: 1 !important;
     @include pc-lg{
         font-size: 32px;
     }

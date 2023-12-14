@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>南部旅遊預算</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <a href="#" class="top-btn" type="button">TOP</a>
+    <div class="banner-ad d-flex justify-content-center align-items-center">
+      <p class="fs-1 text-center">南部旅遊預算</p>
+    </div>
+    <div class="container py-10 py-lg-30">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="pb-5 pb-lg-20">
+        <ol class="breadcrumb mb-0 fs-5">
+          <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="tourist-attractions.html">南部旅遊預算</a></li>
+        </ol>
+      </nav>
+      <%- include('./layout/loader2'); -%>
+    </div>
+
+    <%- include('./layout/ad'); -%>
+    <%- include('./layout/footer'); -%>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

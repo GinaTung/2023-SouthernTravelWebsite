@@ -2,6 +2,7 @@ const menu2 = document.querySelector(".menu2");
 const menu = document.querySelector(".menu");
 const urlParams2 = new URLSearchParams(window.location.search);
 const userId = urlParams2.get("userId");
+import logoImg from "../images/logo.png";
 let token;
 function checkLoggedIn() {
   if (!token && !userId) {
@@ -15,7 +16,7 @@ function renderProtectedData() {
   let str1 = "";
   str1 = `
       <a class="navbar-brand py-6 mx-0 " href="index.html">
-      <img src="/logo.png" alt="南部輕旅遊">
+      <img src="${logoImg}" alt="南部輕旅遊">
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

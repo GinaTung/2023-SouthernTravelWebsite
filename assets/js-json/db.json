@@ -5,11 +5,6 @@
       "password": "$2a$10$UZ.XELY/.UIKNtya629zBOCgv7o1ncjzB6Uvk/iU2hw0r4iZ7tL62",
       "role": "user",
       "id": 1
-    },
-    {
-      "email": "test2@gmail.com",
-      "password": "$2a$10$gHBHoOrvVYeLD9gN/O7xi.iUHaGH3eFzXwif1IbHE70mc2bBnRNhe",
-      "id": 2
     }
   ],
   "posts": [],

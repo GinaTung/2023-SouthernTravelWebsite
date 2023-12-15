@@ -1,4 +1,4 @@
-import{a as c}from"./config-3d28a90d.js";let e=[];const l=document.querySelector(".attractionWrap");function f(t={}){axios.get(`${c}/attractionsList`).then(function(a){e=a.data,o(),t.changeAttractions&&t.changeAttractions(),t.displayTotalCount&&t.displayTotalCount(),t.displayAreaCounts&&t.displayAreaCounts()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function r(t){return` 
+import{a as c}from"./config-574966d6.js";let e=[];const l=document.querySelector(".attractionWrap");function f(t={}){axios.get(`${c}/attractionsList`).then(function(a){e=a.data,o(),t.changeAttractions&&t.changeAttractions(),t.displayTotalCount&&t.displayTotalCount(),t.displayAreaCounts&&t.displayAreaCounts()}).catch(function(a){console.log(a),alert(`${a.response.status}錯誤`)})}function r(t){return` 
     <div class="col-12 col-md-6 col-lg-4">
     <div class="card card-att h-100">
       <span class="tag text-white">${t.area}</span>

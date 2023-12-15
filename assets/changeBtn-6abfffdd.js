@@ -1,4 +1,4 @@
-const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.querySelector(".menu2"),n=document.querySelector(".menu"),r=new URLSearchParams(window.location.search),t=r.get("userId");let e;function i(){t?o():c()}function o(){let a="";a=`
+const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.querySelector(".menu2"),n=document.querySelector(".menu"),r=new URLSearchParams(window.location.search),a=r.get("userId");let e;function i(){a?o():c()}function o(){let t="";t=`
       <a class="navbar-brand py-6 mx-0 " href="index.html">
       <img src="${l}" alt="南部輕旅遊">
     </a>
@@ -10,13 +10,13 @@ const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.queryS
     <div class="collapse navbar-collapse py-10 py-lg-0" id="navbarText">
       <ul class="navbar-nav m-auto mb-lg-0 align-items-center">
         <li class="nav-item mb-10 mb-lg-0">
-          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-attractions.html?userId=${t}&token=${e}">南部旅遊景點</a>
+          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-attractions.html?userId=${a}&token=${e}">南部旅遊景點</a>
         </li>
         <li class="nav-item mb-10 mb-lg-0">
-          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-package.html?userId=${t}&token=${e}">南部旅遊方案</a>
+          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-package.html?userId=${a}&token=${e}">南部旅遊方案</a>
         </li>
         <li class="nav-item mb-10 mb-lg-0">
-          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-budget.html?userId=${t}&token=${e}">南部旅遊預算</a>
+          <a class="nav-link px-5 px-xl-10 fs-5 text-dark" href="tourist-budget.html?userId=${a}&token=${e}">南部旅遊預算</a>
         </li>
       </ul>
       <div
@@ -28,11 +28,11 @@ const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.queryS
         <a href="#" class="btn-turquoise ms-3" type="button" id="logOutBtn">登出</a>
         <ul class="dropdown-menu rounded-1 py-1" aria-labelledby="dropdownMenuLink" style="border:1px solid #43B8BD">
           <li class="userName px-4">123</li>
-          <li><a class="dropdown-item" href="favorite-list.html?userId=${t}&token=${e}">收藏列表</a></li>
+          <li><a class="dropdown-item" href="favorite-list.html?userId=${a}&token=${e}">收藏列表</a></li>
         </ul>
       </div>
     </div>
-      `,n.innerHTML=a}function c(){let a="";a=`
+      `,n.innerHTML=t}function c(){let t="";t=`
       <a class="navbar-brand py-6 mx-0 " href="index.html">
       <img src="${l}" alt="南部輕旅遊">
     </a>
@@ -60,4 +60,4 @@ const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.queryS
         <a href="signUp.html" class="btn-turquoise ms-3" type="button">註冊</a>
       </div>
       </div>
-    `,s.innerHTML=a}i();
+    `,s.innerHTML=t}i();const d=document.querySelector("#logOutBtn");d.addEventListener("click",u);function u(){alert("登出成功"),localStorage.removeItem("userId"),window.location.href="index.html"}

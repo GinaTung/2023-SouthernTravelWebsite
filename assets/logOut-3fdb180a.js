@@ -1,6 +1,6 @@
-const l=document.querySelector(".menu2"),s=document.querySelector(".menu"),n=new URLSearchParams(window.location.search),a=n.get("userId");let e;function r(){a?i():o()}function i(){let t="";t=`
+const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.querySelector(".menu2"),n=document.querySelector(".menu"),r=new URLSearchParams(window.location.search),a=r.get("userId");let e;function o(){a?i():c()}function i(){let t="";t=`
       <a class="navbar-brand py-6 mx-0 " href="index.html">
-      <img src="../assets/images/logo.png" alt="南部輕旅遊">
+      <img src="${l}" alt="南部輕旅遊">
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@ const l=document.querySelector(".menu2"),s=document.querySelector(".menu"),n=new
         </ul>
       </div>
     </div>
-      `,s.innerHTML=t}function o(){let t="";t=`
+      `,n.innerHTML=t}function c(){let t="";t=`
       <a class="navbar-brand py-6 mx-0 " href="index.html">
       <img src="../assets/images/logo.png" alt="南部輕旅遊">
     </a>
@@ -60,4 +60,4 @@ const l=document.querySelector(".menu2"),s=document.querySelector(".menu"),n=new
         <a href="signUp.html" class="btn-turquoise ms-3" type="button">註冊</a>
       </div>
       </div>
-    `,l.innerHTML=t}r();const c=document.querySelector("#logOutBtn");c.addEventListener("click",d);function d(){alert("登出成功"),localStorage.removeItem("token"),localStorage.removeItem("userId"),window.location.href="index.html"}
+    `,s.innerHTML=t}o();const d=document.querySelector("#logOutBtn");d.addEventListener("click",u);function u(){alert("登出成功"),localStorage.removeItem("token"),localStorage.removeItem("userId"),window.location.href="index.html"}

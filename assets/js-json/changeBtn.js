@@ -60,7 +60,7 @@ function renderDefaultData() {
   let str2 = "";
   str2 = `
       <a class="navbar-brand py-6 mx-0 " href="index.html">
-      <img src="../assets/images/logo.png" alt="南部輕旅遊">
+      <img src="${logoImg}" alt="南部輕旅遊">
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

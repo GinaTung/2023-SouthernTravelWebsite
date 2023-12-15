@@ -1,4 +1,4 @@
-import"./main-d15728ed.js";import"./logOut-11a5dfa3.js";import"./border-a743e317.js";import{a as u}from"./config-3d28a90d.js";const c=document.querySelector(".attractionWrap");function o(t){return` 
+import"./main-d15728ed.js";import"./border-a743e317.js";import{a as u}from"./config-3d28a90d.js";const c=document.querySelector(".attractionWrap");function o(t){return` 
     <div class="col-12 col-md-6 col-lg-4">
     <div class="card card-att h-100">
       <span class="tag text-white">${t.area}</span>

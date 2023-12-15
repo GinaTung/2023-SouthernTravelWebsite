@@ -1,0 +1,1 @@
+document.querySelector(".userName");const e=localStorage.getItem("userId");function o(){if(e){console.log("已登入，用戶 ID：",e);const t=document.querySelector(".userName");t&&(t.innerText=`用戶 ID：${e}`)}}document.addEventListener("DOMContentLoaded",o);

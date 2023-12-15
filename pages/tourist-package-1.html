@@ -26,7 +26,7 @@
           <div class="row">
             <div class="col-12 col-md-3 mb-5 mb-md-6 mb-lg-0">
               <div class="border-info2 border-1 border">
-                <a href="tourist-chiayi-1.html" class="nav-link fs-5 p-5 link-color2 d-block active">回到目前景點介紹</a>
+                <a href="tourist-package-1.html" class="nav-link fs-5 p-5 link-color2 d-block active">回到目前景點介紹</a>
                 <p class="fs-4 p-5 bg-primary-500 text-white">地區篩選</p>
                 <ul class="nav flex-column attraction-plans-select">
                   <li class="nav-item">
@@ -51,30 +51,21 @@
             </div>
             <div class="col-12 col-md-9">
               <div class="row g-3 attraction-plans-wrap">
-                <%- include('./layout/loader2'); -%>
-                <!-- <div class="col-12 col-md-6 col-lg-4 ">
-                  <div class="card card-att h-100">
-                    <span class="tag text-white">台南</span>
-                    <div class="card-att-img">
-                      <img src="../assets/images/plan3.png" class="card-img-top img-fluid " alt="歷史探訪之旅1日遊">
-                    </div>
-                    <div class="heart3">
-                      <i class="bi bi-heart heart-click"></i>
-                    </div>
-                    <div class="card-body card-body-att">
-                      <div class="card-title d-flex align-items-center">
-                        <i class="bi bi-geo-fill me-1 fs-6 fs-lg-5 text-primary-700"></i>
-                        <p class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">台南</p>
-                      </div>
-                      <h4 class="fs-6 fs-lg-5 fw-bold text-primary-700 card-title-att">歷史探訪之旅1日遊</h4>
-                    </div>
-                    <div class="card-footer d-flex justify-content-between border-0 pt-0">
-                      <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5"></i>
-                      <span class="fs-6 fs-lg-5">$7500</span>
+                <span class="btn btn-primary-600 text-white col-2 p-2 fs-6 me-3">鐵道之旅</span>
+                <span class="btn btn-primary-400 text-white col-2 p-2 fs-6">嘉義</span>
+                <div class="intr-title d-flex justify-content-between mb-4 fs-3 border-bottom border-primary-500 border-2">
+                  <div class="d-flex align-items-center">
+                    <p class="fs-3 me-2 fw-bold">阿里山芬多精之雙日遊</p>
+                    <div class="heart4">
+                      <i class="bi bi-heart"></i>
                     </div>
                   </div>
-                </div> -->
-
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-cart-fill me-1 fs-2 fs-lg-5 z-index-3" style="color: #0EA0A6;"></i>
+                    <p>$24000</p>
+                  </div>
+                </div>
+                <%- include('./layout/loader2'); -%>
               </div>
             </div>
           </div>
@@ -85,7 +76,7 @@
     <%- include('./layout/ad'); -%>
       <%- include('./layout/footer'); -%>
         <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-        <script type="module" src="../assets/js-json/viewGetPackage.js"></script>
+        <script type="module" src="../assets/js-json/viewSinglePackage.js"></script>
         <script type="module" src="../main.js"></script>
 </body>
 

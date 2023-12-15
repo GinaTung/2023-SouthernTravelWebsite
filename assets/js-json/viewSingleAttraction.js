@@ -9,7 +9,7 @@ function getAttractionData2() {
     .get(`${api_url}/attractionsList`)
     .then(function (response) {
       attractionsData2 = response.data;
-      console.log(attractionsData2);
+      // console.log(attractionsData2);
       displayTotalCount();
       displayAreaCounts();
     })

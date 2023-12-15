@@ -7,26 +7,23 @@ const attractionPlansSelect = document.querySelector(
 const attractionsNum5 = document.querySelector(".attractionsNum");
 const attractionsNum6 = document.querySelectorAll(".attractionsNum2");
 let attractionPlansData = [];
-function init() {
-  getAttractionPlansList();
-}
-init();
+
 function getAttractionPlansList() {
   axios
     .get(`${api_url}/attractionPlansList`)
     .then(function (res) {
       attractionPlansData = res.data;
-      console.log(attractionPlansData);
+      // console.log(attractionPlansData);
       displayTotalCount2();
       displayAreaCounts2();
-      changeAttractions2();
-      renderAttractionPlansWrap();
     })
     .catch(function (error) {
       console.log(error);
       alert(`${error.response.status}錯誤`);
     });
 }
+getAttractionPlansList();
+changeAttractions2();
 
 //組合列表
 function combineAttractionPlanItem(planItem) {
@@ -50,10 +47,7 @@ function combineAttractionPlanItem(planItem) {
         </h4>
       </div>
       <div class="card-footer d-flex justify-content-between border-0 pt-0">
-        <a href="#" class="cart-btn-open-list" type="button">
-          <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5 z-index-3"></i>
-        </a>
-        
+        <i class="bi bi-cart-fill me-1 fs-6 fs-lg-5 z-index-3"></i>
         <span class="fs-6 fs-lg-5">${planItem.planPrice}</span>
       </div>
     </div>
@@ -129,6 +123,14 @@ function displayAreaCounts2() {
   });
 }
 
+function showLoader() {
+  attractionPlansWrap.innerHTML = `
+      <div class="bg-primary-600 w-100 mt-3" style="text-align: center;margin: auto;padding: 20px;min-height: 150px;">
+        <span class="loader"></span>
+      </div>
+    `;
+}
+
 //監聽篩選
 export function changeAttractions2() {
   attractionPlansSelect.addEventListener("click", function (e) {
@@ -156,12 +158,7 @@ export function changeAttractions2() {
         }
       });
       if (!hasMatchingItem) {
-        // 如果沒有符合條件的項目，顯示 loader 或其他內容
-        attractionPlansWrap.innerHTML = `
-        <div class="bg-primary-600 w-100 mt-3" style="text-align: center;margin: auto;padding: 20px;min-height: 150px;">
-            <span class="loader"></span>
-        </div>
-        `;
+        showLoader();
       } else {
         // 如果有符合條件的項目，顯示相應的內容
         attractionPlansWrap.innerHTML = str;

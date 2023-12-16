@@ -9,6 +9,11 @@ function checkLoggedIn() {
     renderDefaultData();
   } else {
     renderProtectedData();
+    // 添加事件监听器，只有在用户已登录时才添加
+    const logOutBtn = document.getElementById("logOutBtn");
+    if (logOutBtn) {
+      logOutBtn.addEventListener("click", logOut);
+    }
   }
 }
 
@@ -49,7 +54,7 @@ function renderProtectedData() {
       </div>
     </div>
       `;
-      menu.innerHTML = str1;
+  menu.innerHTML = str1;
 }
 
 // logInBtnMain.addEventListener("click", function () {
@@ -87,7 +92,17 @@ function renderDefaultData() {
       </div>
       </div>
     `;
-    menu2.innerHTML = str2;
+  menu2.innerHTML = str2;
 }
 
 checkLoggedIn();
+
+// logOut 函数
+function logOut() {
+  alert("登出成功");
+  // 刪除本地儲存的令牌
+  // localStorage.removeItem("token"); // 使用 "token" 作為鍵名稱
+  localStorage.removeItem("userId"); // 如果需要，同时删除用户ID
+  // 跳转到登入页面或首页
+  window.location.href = "index.html";
+}

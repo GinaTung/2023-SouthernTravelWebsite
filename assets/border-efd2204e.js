@@ -1,4 +1,4 @@
-const l="/2023-SouthernTravelWebsite/assets/logo-525b0b6e.png",s=document.querySelector(".menu2"),r=document.querySelector(".menu"),o=new URLSearchParams(window.location.search),a=o.get("userId");let e;function i(){if(!a)d();else{c();const t=document.getElementById("logOutBtn");t&&t.addEventListener("click",u)}}function c(){let t="";t=`
+const l="/2023Perfume-E-commerce/assets/logo-525b0b6e.png",s=document.querySelector(".menu2"),r=document.querySelector(".menu"),o=new URLSearchParams(window.location.search),a=o.get("userId");let e;function i(){if(!a)d();else{c();const t=document.getElementById("logOutBtn");t&&t.addEventListener("click",u)}}function c(){let t="";t=`
       <a class="navbar-brand py-6 mx-0 " href="index.html">
       <img src="${l}" alt="南部輕旅遊">
     </a>

@@ -1,0 +1,1 @@
+import"./main-ae0cfe04.js";import"./border-efd2204e.js";import"./auth-bc9de01d.js";new Swiper(".mySwiper",{autoplay:{delay:5e3},mousewheel:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination"}});

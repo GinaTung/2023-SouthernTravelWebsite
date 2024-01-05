@@ -62,9 +62,11 @@
 
 .card-attractions {
   position: relative;
+  height: 100%;
   .card-attractions-img {
     border-radius: 24px;
     display: block;
+    height: 100%;
     @include pad-md {
       height: 400px;
       object-fit: cover;

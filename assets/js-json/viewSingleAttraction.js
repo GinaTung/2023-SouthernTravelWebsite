@@ -1,4 +1,4 @@
-import { attractionList, combineAttractionItem, paginationArea} from "./viewgetAttractions.js";
+import { attractionList, combineAttractionItem, paginationArea} from "./viewGetAttractions.js";
 import { api_url } from "./config.js";
 let attractionsData2 = [];
 const attractionsNum3 = document.querySelector(".attractionsNum");
